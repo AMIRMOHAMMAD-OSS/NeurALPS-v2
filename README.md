@@ -28,7 +28,7 @@ Connection windows use 20 residues from each flanking domain and the intervening
 
 ## Architecture
 
-![NeurALPS A, C and optional D architecture](docs/assets/architecture.svg)
+![NeurALPS A, C and optional D architecture](Screenshot%202026-09-15%20000724.png)
 
 | Variant | Computation | Role |
 |---|---|---|
