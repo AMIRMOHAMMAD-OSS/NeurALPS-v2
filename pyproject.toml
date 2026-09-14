@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralps-v2"
+version = "0.2.0.dev0"
+description = "Reference encoders and evaluation contracts for NRPS assembly-line representation learning"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["nrps", "protein-representation", "biosynthesis", "self-supervised-learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+model = ["torch>=2.8,<3"]
+dev = ["build>=1.2"]
+
+[project.scripts]
+neuralps-preflight = "neuralps_v2.phase2_preflight:main"
+neuralps-validate-data = "neuralps_v2.manifest_adapter:main"
+neuralps-threshold-summary = "neuralps_v2.evaluation_protocol:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["neuralps_v2*"]

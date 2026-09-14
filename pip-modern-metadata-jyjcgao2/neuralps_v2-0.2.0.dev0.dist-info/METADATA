@@ -1,0 +1,188 @@
+Metadata-Version: 2.4
+Name: neuralps-v2
+Version: 0.2.0.dev0
+Summary: Reference encoders and evaluation contracts for NRPS assembly-line representation learning
+Keywords: nrps,protein-representation,biosynthesis,self-supervised-learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Provides-Extra: model
+Requires-Dist: torch<3,>=2.8; extra == "model"
+Provides-Extra: dev
+Requires-Dist: build>=1.2; extra == "dev"
+
+# NeurALPS v2
+
+**Learning transferable representations of nonribosomal peptide synthetase assembly lines.**
+
+NeurALPS v2 is a research framework for adapting frozen protein-language-model features to NRPS assembly organization. It represents individual domains and the physical connections between them, learns from natural assembly lines, and evaluates transfer to engineered construct activity and quantitative T-domain production.
+
+The goal is an NRPS foundation encoder that can support multiple downstream tasks. Construct activity prediction is one application of that encoder.
+
+**Current status:** Phase‑2.2 design and reference implementation. The repository contains A/C/D encoder components, masking and scoring contracts, training helpers, and evaluation utilities. Full data integration and production training are in progress; pretrained NeurALPS checkpoints and new benchmark results are not included.
+
+[Architecture](docs/architecture.md) · [Execution plan](docs/execution-plan.md) · [Data interface](docs/data-interface.md) · [Evaluation](docs/evaluation.md) · [Roadmap](ROADMAP.md)
+
+## Why this representation?
+
+Engineering changes can occur inside a domain, at an intra-module seam, or between proteins. A representation organized only around modules can obscure those changes. NeurALPS instead uses domains and connections as its invariant objects:
+
+| Object | Meaning | Representation |
+|---|---|---|
+| **D — domain** | One catalytic or carrier domain, including terminal TE | Its own frozen ESM-C feature |
+| **B — intra-module boundary** | A covalent seam between consecutive domains | A connection window with domain flanks |
+| **J — same-protein linker** | A covalent connection between annotated modules | The same connection encoding used for B |
+| **J — chain break** | Continuation across separate proteins | Two ordered protein termini |
+| **M — module** | Biological annotation and display context | Metadata; no module token |
+
+B and same-protein J share the neural **COVALENT** type. A physical chain break uses **BREAK**. Relabeling module boundaries must leave the model's inputs and predictions unchanged.
+
+Connection windows use 20 residues from each flanking domain and the intervening sequence, with a 512-aa cap under the audited extraction policy. ESM-C-600M features have width 1152. Mean-pooled features are the initial control; preserving pretrained residue detail is a separate, preferred input experiment.
+
+## Architecture
+
+![NeurALPS A, C and optional D architecture](docs/assets/architecture.svg)
+
+| Variant | Computation | Role |
+|---|---|---|
+| **A** | Shared 1152→256 input projection and four local context blocks | Local domain–connection representations |
+| **C** | Complete A encoder plus two assembly-context blocks with four latent slots | Distant context and terminal constraints |
+| **D** | Two shared-weight A+C passes with detached feedback adapters | Conditional refinement experiment |
+
+A and C form the main development path. D is retained only if measured gains justify its additional computation.
+
+The outputs have distinct meanings:
+
+1. **Contextual features:** reusable domain and connection states before a scoring head.
+2. **Natural-support diagnostics:** conditional scores from a masked natural-data checkpoint.
+3. **Supervised activity predictions:** construct-level logits learned from activity labels.
+
+An optional additive activity head exposes an exact decomposition of its construct logit. These contributions and candidate-edit tables are model explanations; biological interface claims require validation. See [Interpretability](docs/interpretability.md).
+
+## Quick start
+
+Use Python 3.11 or 3.12. From the repository root:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e .
+
+neuralps-preflight --config configs/phase2_final_config.json
+python scripts/check_contracts.py
+python examples/synthetic_manifest.py
+```
+
+On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell.
+
+This lightweight installation runs NumPy metrics, schema checks and the synthetic masking example. Neural tests report explicit skips until PyTorch is installed. Preflight checks configuration; its output intentionally records `training_validated: false`.
+
+### Enable the neural reference
+
+Install a PyTorch build suitable for your machine, then install the model extra. The Linux/Windows CPU reference command is:
+
+```bash
+python -m pip install "torch==2.8.0" --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e ".[model]"
+python scripts/check_contracts.py --require-torch
+python examples/model_smoke.py --variant A
+```
+
+For CUDA, ROCm or macOS, use the [official PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/). ESM-C weights are not needed for synthetic smoke checks because those checks use clearly labeled artificial feature vectors.
+
+`--require-torch` fails when neural checks are skipped. A synthetic forward pass checks software integration; it is not a trained activity prediction.
+
+### Build A, then inherit it into C
+
+```python
+from neuralps_v2.phase2_training import (
+    build_bundle,
+    copy_variant,
+    load_config,
+)
+
+config = load_config("configs/phase2_final_config.json")
+a = build_bundle(config, variant="A", input_variant="pool")
+c = build_bundle(config, variant="C", input_variant="pool")
+copy_variant(a, c)
+```
+
+This example constructs untrained bundles. During the training programme, load the selected trained A checkpoint before copying to C. Complete shared weights, including the masked decoder, are inherited.
+
+## Training programme
+
+| Stage | Work | Evidence required to advance |
+|---|---|---|
+| **E0 / E1** | Connect audited data, repair evaluation, freeze donor folds and establish ESM-C/TE baselines | Correct joins, split isolation and matched baseline predictions |
+| **F1** | Pretrain A on natural assembly lines | Valid masking, connected gradients and measured transfer |
+| **F2** | Compare pooled features with pretrained residue detail; test the span objective | Matched input and compute comparisons |
+| **F3** | Extend the selected A into C | Benefit beyond equal additional A training |
+| **T1 / T2** | Adapt independent task copies to Bode activity and quantitative T-domain production | Donor/group-controlled learning curves and uncertainty |
+| **I1 / F4** | Validate interpretation; optionally test D | Rebuilt candidate features and explicit benefit/cost evidence |
+
+The main natural-data objective predicts clean, detached ESM-C targets from masked context using cosine loss. Candidate ranking is a low-weight auxiliary. Residue-span prediction is evaluated independently. Every input channel contaminated by a masked target must be removed or recomputed.
+
+There is no end-to-end `train.py` command yet. The [execution plan](docs/execution-plan.md) specifies the remaining exporters, samplers, runner, checkpointing and evaluation work. The [experiment registry](configs/experiment_registry.json) records the stage dependencies and acceptance criteria.
+
+## Data and evaluation
+
+The inventory below comes from the project audit dated 12 September 2026. Data and embeddings are stored separately from this repository.
+
+| Dataset | Reported scale | Role |
+|---|---|---|
+| Natural Route-A core | 42,415 assembly lines: 33,932 train / 4,242 dev / 4,241 test | Natural representation learning |
+| Natural connection cache | 943,506 unique windows in the overall cache | Only split-permitted occurrences enter training |
+| Bode-1 | 324 constructs; 173 active / 151 inactive; 21 donor parts | Supervised development and donor-held-out evaluation |
+| Bode-2 | 106 constructs; 64 active / 42 inactive | Retrospective external transfer benchmark |
+
+Bode-1 and Bode-2 have no reported shared donor parts. Homology and assay differences still require separate reporting. The manuscript's 105 single-exchange cohort must be mapped explicitly to the 106-record Bode-2 inventory.
+
+Required comparisons include frozen ESM-C with the same head, the same encoder without NRPS pretraining, direct connection features, and TE-similarity/source-context baselines where available. Report donor-held-out folds, nested label budgets, five paired seeds, and uncertainty. Do not tune model choices on Bode-2.
+
+The iGEM manuscript's 43/51 active constructs above its TE threshold describe **84.3% selection precision**. The corresponding binary threshold accuracy is **73.3%** on that cohort. These quantities must not be compared directly with another model's AUROC. The [evidence discussion](docs/architecture.md#22-igem-manuscript-a-required-biological-baseline) documents the calculation and its limits.
+
+## Bring your data
+
+```bash
+cp configs/data_paths.template.json configs/data_paths.local.json
+```
+
+Fill the local file with paths to audited manifests, embedding indexes, labels and fixed folds. Relative paths resolve from that file's directory. Then run:
+
+```bash
+neuralps-preflight --config configs/phase2_final_config.json --paths configs/data_paths.local.json
+```
+
+The unfilled template fails intentionally. Follow the [canonical schema](docs/data-interface.md) and [data directory guide](data/README.md) to export your current tables. Sequence hashes and context-aware feature keys serve different purposes and must remain separate.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `src/neuralps_v2/` | Encoders, heads, losses, adapters and numerical utilities |
+| `configs/` | Phase-2 settings, experiment registry and local-path template |
+| `tests/` | Masking, topology, scoring, inheritance and training contracts |
+| `examples/` | Synthetic data preparation and an optional neural smoke check |
+| `scripts/` | Contract-check and repository-release helpers |
+| `docs/` | Full architecture, execution, evaluation and interpretation guides |
+| `reports/` | Recorded local verification and prior reference evidence |
+| `.github/` | CPU CI workflow, issue forms and pull-request template |
+
+## Verification and development
+
+See [the recorded repository checks](reports/repository_verification.json) for the exact executed status. The source reference had 22 passing checks and 11 PyTorch skips in an environment without PyTorch. This does not establish GPU correctness or trained performance.
+
+The GitHub Actions workflow runs the lightweight checks and a separate CPU PyTorch gate. Its first hosted result will be available after the repository is pushed. There is no pre-existing CI badge or benchmark claim.
+
+See [Contributing](CONTRIBUTING.md), [Reproducibility](docs/reproducibility.md), and [GitHub setup](docs/github-setup.md).
+
+## Citation and license status
+
+Use [CITATION.cff](CITATION.cff) and record the exact commit used. Citation metadata currently credits the project collectively; no paper DOI or trained-model release is claimed.
+
+A project license has not yet been selected. No `LICENSE` file is included. See [License status](docs/license-status.md) for the remaining release metadata and third-party attribution boundaries.

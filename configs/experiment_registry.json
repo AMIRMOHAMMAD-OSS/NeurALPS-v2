@@ -1,0 +1,132 @@
+{
+  "design_version": "phase2.2",
+  "execution_status": "planned; reference components supplied",
+  "seeds": [
+    20260913,
+    20260914,
+    20260915,
+    20260916,
+    20260917
+  ],
+  "label_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "stages": [
+    {
+      "id": "E0",
+      "requires": [],
+      "task": "Current-data exports, repaired evaluator, fixed donor folds and label budgets",
+      "policy": "required",
+      "gate": "Dataset and split identities validated; exact current paths resolved",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "E1",
+      "requires": [
+        "E0"
+      ],
+      "task": "Supervised ESM-C, direct B and TE/context baselines",
+      "policy": "required",
+      "gate": "Matched input/label predictions and all fold metrics saved",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "F1",
+      "requires": [
+        "E0",
+        "E1"
+      ],
+      "task": "A_pool natural foundation pretraining",
+      "policy": "required",
+      "gate": "Leakage/gradient gates and matched transfer comparison",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "F2",
+      "requires": [
+        "F1"
+      ],
+      "task": "Pretrained residue pooling and span objective comparison",
+      "policy": "required_experiment",
+      "gate": "Residue extraction/masking valid; cost and transfer measured",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "F3",
+      "requires": [
+        "F1"
+      ],
+      "task": "C assembly context with inherited selected A inputs",
+      "policy": "required_experiment",
+      "gate": "A/C identity then compute-controlled transfer evidence",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "T1",
+      "requires": [
+        "E1",
+        "F1"
+      ],
+      "task": "Bode-1 learning curves and locked retrospective Bode-2 scoring",
+      "policy": "required",
+      "gate": "Model choices fixed without external tuning",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "T2",
+      "requires": [
+        "F1"
+      ],
+      "task": "Quantitative T-domain transfer",
+      "policy": "required",
+      "gate": "Assay background and declared distance/parent split recovered",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "P1",
+      "requires": [
+        "E1",
+        "F3"
+      ],
+      "task": "Optional donor-source sequence context adapter",
+      "policy": "conditional",
+      "gate": "Source coverage and input-matched ESM-only baseline",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "I1",
+      "requires": [
+        "T1"
+      ],
+      "task": "Additive head and fully rebuilt candidate tables",
+      "policy": "required_experiment",
+      "gate": "Factor sum correct; all affected features regenerated",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "F4",
+      "requires": [
+        "F3"
+      ],
+      "task": "D shared-weight refinement",
+      "policy": "conditional",
+      "gate": "Registered hypothesis, full gradient gate, matched-compute comparison",
+      "status": "not_executed_on_current_data"
+    },
+    {
+      "id": "R1",
+      "requires": [
+        "T1",
+        "T2",
+        "I1"
+      ],
+      "task": "Release selected foundation/task checkpoints and results",
+      "policy": "required",
+      "gate": "Claims limited to measured comparisons; optional branches may be omitted",
+      "status": "not_executed_on_current_data"
+    }
+  ]
+}

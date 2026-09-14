@@ -1,0 +1,89 @@
+{
+  "design_version": "phase2.2",
+  "igem": {
+    "source": "Manuscript_iGEM_v14.pdf",
+    "pages": [
+      8,
+      9,
+      10,
+      11,
+      14
+    ],
+    "single_exchange_n": 105,
+    "te_high": {
+      "active": 43,
+      "total": 51
+    },
+    "te_low": {
+      "active": 20,
+      "total": 54
+    },
+    "threshold_accuracy_derived": 0.7333333333333333,
+    "threshold_precision_derived": 0.8431372549019608,
+    "position_active": [
+      14,
+      19,
+      30
+    ],
+    "position_total_each": 35,
+    "double_swaps": {
+      "active": 25,
+      "total": 33
+    },
+    "triple_swaps": {
+      "active": 15,
+      "total": 27
+    },
+    "status": "reported counts and arithmetic; no individual-score reanalysis"
+  },
+  "tdomain": {
+    "source": "872ac636d872e867d13d6b56.pdf",
+    "pages": [
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "paper_train": 55,
+    "paper_test": 30,
+    "paper_reported_min_mutation_separation": 25,
+    "table_S4": {
+      "mean_RF": [
+        0.25,
+        -0.1,
+        0.59
+      ],
+      "unrolled_linear": [
+        0.57,
+        0.26,
+        0.83
+      ],
+      "zero_shot": [
+        0.35,
+        -0.05,
+        0.74
+      ],
+      "MSE_finetune": [
+        0.38,
+        0,
+        0.72
+      ],
+      "contrastive_finetune": [
+        0.43,
+        0.11,
+        0.73
+      ]
+    },
+    "metric": "Spearman with bootstrap 95% intervals",
+    "author_split_reproduced": false
+  },
+  "workbook": {
+    "source": "0762b9babfa0930a4ffb08e9.xlsx",
+    "sheet": "Aminoacid_Sequence_FLL_Titer",
+    "numeric_sequence_rows_including_WT": 249,
+    "nonnumeric_sequence_rows": 10,
+    "status": "read-only inventory; not all study experiments or recovered author split"
+  },
+  "project_data": "user 2026-09-12 audited substrate; not independently re-extracted here"
+}

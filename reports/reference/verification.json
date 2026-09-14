@@ -1,0 +1,75 @@
+{
+  "design_version": "phase2.2",
+  "date": "2026-09-14",
+  "deliverable_scope": "Consolidated execution specification and reference components; current-data production training remains scheduled work.",
+  "syntax_files": 19,
+  "syntax_passed": true,
+  "discovered_tests": 33,
+  "executed_tests": 22,
+  "passed_tests": 22,
+  "skipped_tests": 11,
+  "failed_tests": 0,
+  "error_tests": 0,
+  "skipped_reason": "PyTorch is not installed in either inspected authoring runtime.",
+  "torch_runtime_validated": false,
+  "gpu_validated": false,
+  "private_dataset_training_run": false,
+  "current_full_dataset_reaudited": false,
+  "current_data_source": "User audit of 2026-09-12; accepted without re-extracting the remote corpus.",
+  "supplied_new_evidence_reviewed": [
+    "Manuscript_iGEM_v14.pdf",
+    "872ac636d872e867d13d6b56.pdf",
+    "0762b9babfa0930a4ffb08e9.xlsx"
+  ],
+  "legacy_offset_mismatch": "Observed at four call sites in supplied historical source; exact production repair still requires execution.",
+  "canonical_manifest_adapter_implemented": true,
+  "canonical_adapter_numpy_tests_passed": 6,
+  "canonical_adapter_torch_collation_validated": false,
+  "production_adapters_implemented": false,
+  "residue_encoder_component_implemented": true,
+  "residue_extraction_pipeline_implemented": false,
+  "candidate_sequence_regeneration_implemented": false,
+  "source_context_wrapper_implemented": false,
+  "full_tdomain_background_adapter_implemented": false,
+  "training_objective_reference_implemented": true,
+  "training_runner_data_loader_agnostic": true,
+  "production_accumulation_ddp_sampler_resume_implemented": false,
+  "package_config_validated": true,
+  "expected_failing_gates": {
+    "strict_torch_gate_exit_code": 2,
+    "strict_torch_gate_reason": "PyTorch unavailable; 11 required runtime tests skipped.",
+    "unfilled_path_template_exit_code": 2,
+    "unfilled_path_template_result": {
+      "package_config_valid": true,
+      "path_check_requested": true,
+      "missing_required_paths": [
+        "natural_train",
+        "natural_dev",
+        "natural_test",
+        "bode1",
+        "bode2",
+        "feature_index",
+        "labels",
+        "donor_membership",
+        "split_manifest"
+      ],
+      "production_data_validated": false,
+      "training_validated": false
+    }
+  },
+  "pdfs": {
+    "design": {
+      "pages": 17,
+      "rendered": true,
+      "out_of_page_characters": 0,
+      "visual_review": "All pages reviewed in contact sheets; key evidence, diagram, training table and updated code page inspected at full size."
+    },
+    "execution": {
+      "pages": 11,
+      "rendered": true,
+      "out_of_page_characters": 0,
+      "visual_review": "All pages reviewed in contact sheets; key evidence, diagram, training table and updated code page inspected at full size."
+    }
+  },
+  "claim_boundary": "No new model performance, causal interface validation, exact author-split reproduction or completed corpus/GPU experiment is claimed."
+}

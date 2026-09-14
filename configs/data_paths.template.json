@@ -1,0 +1,60 @@
+{
+  "design_version": "phase2.2",
+  "paths": {
+    "natural_train": {
+      "path": null,
+      "required": true,
+      "description": "Canonical audited training JSONL"
+    },
+    "natural_dev": {
+      "path": null,
+      "required": true,
+      "description": "Canonical audited natural dev JSONL"
+    },
+    "natural_test": {
+      "path": null,
+      "required": true,
+      "description": "Canonical audited natural internal test JSONL"
+    },
+    "bode1": {
+      "path": null,
+      "required": true,
+      "description": "Canonical Bode-1 graph manifest"
+    },
+    "bode2": {
+      "path": null,
+      "required": true,
+      "description": "Canonical Bode-2 graph manifest"
+    },
+    "feature_index": {
+      "path": null,
+      "required": true,
+      "description": "Context-aware key to embedding shard index"
+    },
+    "labels": {
+      "path": null,
+      "required": true,
+      "description": "ID-aligned binary labels with cohort identity"
+    },
+    "donor_membership": {
+      "path": null,
+      "required": true,
+      "description": "Engineered donor sets distinct from invariant scaffolds"
+    },
+    "split_manifest": {
+      "path": null,
+      "required": true,
+      "description": "Frozen outer/inner donor folds"
+    },
+    "source_te": {
+      "path": null,
+      "required": false,
+      "description": "Optional donor-source and recipient TE sequences/alignment scores"
+    },
+    "tdomain_task": {
+      "path": null,
+      "required": false,
+      "description": "Curated quantitative assay manifest with full backgrounds"
+    }
+  }
+}
