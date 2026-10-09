@@ -1,0 +1,2493 @@
+{
+  "schema": "neuralps-reviewed-engineered-training-cohort-v1",
+  "expected_total": 494,
+  "expected_by_dataset": {
+    "bode1": 324,
+    "bode2": 105,
+    "tdomain": 65
+  },
+  "source_labels_sha256": "982e1f1968cf32fc6de7b4cd5098a86aea562d6304cbee41652c5e8c5cae5d84",
+  "source_groups_sha256": "b09f27db144192b4a3cb44be57013b94d77fffc4662bea978fbac64bc63016ae",
+  "rows": [
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN241_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN243_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN244_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN24_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN263_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN200_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN237_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN238_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN239_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN240_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN246_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN235|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN247_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN111|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN204|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN275|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN286|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN269_pIN45|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN111|assembly_line=1",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN204|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN235|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN275|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN286|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode1",
+      "assembly_id": "BODE_pIN264_pIN285_pIN45|assembly_line=1",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS001_(pIG101+pIG017+pIG018)_",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS002_(pIG110+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS003_(pIG102+pIG017+pIG018)_",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS004_(pIG103+pIG017+pIG018)_",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS005_(pIG104+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS006_(pIG105+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS007_(pIG106+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS008_(pIG107+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS009_(pIG108+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS010_(pIG109+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS011_(pIG111+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS012_(pIG112+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS013_(pIG113+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS014_(pIG114+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS015_(pIG116+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS016_(pIG118+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS017_(pIG119+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS018_(pIG120+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS019_(pIG122+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS020_(pIG123+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS021_(pIG124+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS022_(pIG125+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS023_(pIG126+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS024_(pIG127+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS025_(pIG129+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS026_(pIG130+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS027_(pIG131+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS028_(pIG133+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS029_(pIG134+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS030_(pIG136+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS031_(pIG137+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS032_(pIG139+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS033_(pIG140+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS034_(pIG142+pIG017+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS035_(pIG143+pIG017+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS036_(pIG016+pIG145+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS037_(pIG016+pIG154+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS038_(pIG016+pIG146+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS039_(pIG016+pIG147+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS040_(pIG016+pIG148+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS041_(pIG016+pIG149+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS042_(pIG016+pIG150+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS043_(pIG016+pIG151+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS044_(pIG016+pIG152+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS045_(pIG016+pIG153+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS046_(pIG016+pIG155+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS047_(pIG016+pIG156+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS048_(pIG016+pIG157+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS049_(pIG016+pIG158+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS050_(pIG016+pIG160+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS051_(pIG016+pIG162+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS052_(pIG016+pIG163+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS053_(pIG016+pIG164+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS054_(pIG016+pIG166+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS055_(pIG016+pIG167+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS056_(pIG016+pIG168+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS057_(pIG016+pIG169+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS058_(pIG016+pIG170+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS059_(pIG016+pIG171+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS060_(pIG016+pIG173+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS061_(pIG016+pIG174+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS062_(pIG016+pIG175+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS063_(pIG016+pIG177+pIG018)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS064_(pIG016+pIG178+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS065_(pIG016+pIG180+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS066_(pIG016+pIG181+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS067_(pIG016+pIG183+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS068_(pIG016+pIG184+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS069_(pIG016+pIG186+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS070_(pIG016+pIG187+pIG018)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS071_(pIG016+pIG017+pIG189)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS072_(pIG016+pIG017+pIG198)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS073_(pIG016+pIG017+pIG190)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS074_(pIG016+pIG017+pIG191)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS075_(pIG016+pIG017+pIG192)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS076_(pIG016+pIG017+pIG193)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS077_(pIG016+pIG017+pIG194)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS078_(pIG016+pIG017+pIG195)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS079_(pIG016+pIG017+pIG196)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS080_(pIG016+pIG017+pIG197)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS081_(pIG016+pIG017+pIG199)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS082_(pIG016+pIG017+pIG200)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS083_(pIG016+pIG017+pIG201)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS084_(pIG016+pIG017+pIG202)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS085_(pIG016+pIG017+pIG204)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS086_(pIG016+pIG017+pIG206)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS087_(pIG016+pIG017+pIG207)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS088_(pIG016+pIG017+pIG208)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS089_(pIG016+pIG017+pIG210)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS090_(pIG016+pIG017+pIG211)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS091_(pIG016+pIG017+pIG212)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS092_(pIG016+pIG017+pIG213)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS093_(pIG016+pIG017+pIG214)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS094_(pIG016+pIG017+pIG215)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS095_(pIG016+pIG017+pIG217)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS096_(pIG016+pIG017+pIG218)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS097_(pIG016+pIG017+pIG219)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS098_(pIG016+pIG017+pIG221)",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS099_(pIG016+pIG017+pIG222)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS100_(pIG016+pIG017+pIG224)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS101_(pIG016+pIG017+pIG225)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS102_(pIG016+pIG017+pIG227)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS103_(pIG016+pIG017+pIG228)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS104_(pIG016+pIG017+pIG230)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS105_(pIG016+pIG017+pIG231)",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_10|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_11|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_12|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_13|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_14|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_15|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_16|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_17|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_18|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_19|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_1|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_20|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_21|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_22|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_23|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_24|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_25|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_26|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_27|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_28|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_29|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_2|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_30|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_31|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_32|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_33|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_34|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_35|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_36|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_37|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_38|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_39|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_3|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_40|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_41|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_42|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_43|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_44|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_45|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_46|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_47|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_49|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_4|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_50|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_51|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_52|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_53|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_54|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_55|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_56|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_57|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_58|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_59|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_5|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_60|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_61|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_62|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_63|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_64|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_65|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_66|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_6|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_7|context=minimal_GxpS_T3",
+      "observed_activity": 1
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_8|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    },
+    {
+      "dataset": "tdomain",
+      "assembly_id": "AI_9|context=minimal_GxpS_T3",
+      "observed_activity": 0
+    }
+  ],
+  "separate_labelled_controls": [
+    {
+      "dataset": "bode2",
+      "assembly_id": "NRPS000_(pIG016+pIG017+pIG018)",
+      "observed_activity": 1,
+      "role": "native_reference",
+      "reason": "Reference control retained separately from the engineered training cohort."
+    }
+  ],
+  "unlabelled_tdomain_hybrids": "19 additional engineered hybrid contexts are not reviewed binary labels in these attachments."
+}

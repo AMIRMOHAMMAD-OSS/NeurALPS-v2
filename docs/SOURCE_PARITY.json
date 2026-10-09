@@ -1,0 +1,10 @@
+{
+  "legacy_head_folds_replayed": 56,
+  "legacy_head_predictions_replayed": 1077,
+  "maximum_logit_error": 0.0,
+  "real_encoder_checkpoint_available_locally": false,
+  "real_encoder_parity": "Pending scripts/export_runtime.py on Jean Zay",
+  "real_input_route_parity": "Exact model tensors, physical slot coordinates and hashes for AI_1",
+  "tdomain_feature_rows": 88,
+  "typed_feature_max_error": 0.0
+}

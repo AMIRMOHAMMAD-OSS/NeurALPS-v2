@@ -1,45 +1,11 @@
-# Python and local environments
 __pycache__/
-*.py[cod]
+*.pyc
 *.egg-info/
-.venv/
-venv/
-.pytest_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-build/
-dist/
-
-# Local configuration and credentials
-.env
-.env.*
-!.env.example
-*.local.json
-*.local.yaml
-*.local.yml
-
-# Experiment inputs and outputs
-/data/*
-!/data/README.md
-/artifacts/
-/runs/
-/outputs/
-/checkpoints/
-/weights/
+.ipynb_checkpoints/
+runtime_assets/
+downloads/
+results/
 *.pt
-*.pth
-*.ckpt
 *.safetensors
-*.npy
-*.npz
-*.h5
-*.hdf5
-*.parquet
-*.log
-
-# Editor and operating-system files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
+*.zip
+*.whl

@@ -1,0 +1,30 @@
+{
+  "notebook_cells": 20,
+  "notebook_code_cells_compile": true,
+  "notebook_saved_feature_demo_executed": true,
+  "notebook_schema": "nbformat 4 validated",
+  "pending": [
+    "Original-checkpoint golden comparison on Jean Zay via export_runtime.py",
+    "ESMC GPU reference comparison and new-sequence inference in Colab",
+    "Target GitHub repository URL and publishing"
+  ],
+  "source_parity": {
+    "legacy_head_folds_replayed": 56,
+    "legacy_head_predictions_replayed": 1077,
+    "maximum_logit_error": 0.0,
+    "real_encoder_checkpoint_available_locally": false,
+    "real_encoder_parity": "Pending scripts/export_runtime.py on Jean Zay",
+    "real_input_route_parity": "Exact model tensors, physical slot coordinates and hashes for AI_1",
+    "tdomain_feature_rows": 88,
+    "typed_feature_max_error": 0.0
+  },
+  "status": "LOCAL_CHECKS_PASS_REAL_RUNTIME_PENDING",
+  "supervised_fit": {
+    "encoder_updates": 0,
+    "l2": 10.0,
+    "optimizer_gradient_inf": 1.8656855118454052e-07,
+    "rows": 494
+  },
+  "unit_tests_passed": 16,
+  "unit_tests_skipped": 0
+}

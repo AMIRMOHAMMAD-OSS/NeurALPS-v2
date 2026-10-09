@@ -1,0 +1,15 @@
+{
+  "active_features": 2820,
+  "attempts": [
+    {
+      "evaluations": 25,
+      "gradient_inf": 1.8656855118454052e-07,
+      "iterations": 22,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 0.6038278137732433,
+      "success": true
+    }
+  ],
+  "l2": 10.0,
+  "training_examples": 494
+}

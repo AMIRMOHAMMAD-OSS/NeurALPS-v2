@@ -1,0 +1,20 @@
+{
+  "bode1_mean_donor_fold_auroc": 0.7191889239853273,
+  "bode2_pooled_oof": {
+    "auprc_average_precision": 0.8469336770046049,
+    "auroc": 0.7781557067271353,
+    "balanced_accuracy": 0.6587301587301587,
+    "bce": 0.5686118854415116,
+    "brier": 0.19088389301016473,
+    "fn": 13,
+    "fp": 20,
+    "mcc": 0.329914439536929,
+    "n": 105,
+    "positive": 63,
+    "threshold": 0.5,
+    "tn": 22,
+    "tp": 50
+  },
+  "scope": "Prior dataset-specific models; not performance of the new all-494 head",
+  "source_sha256": "3664b29de7acfacc10a73205a5cdf1019a317ab45bc2694411853a0675f8a4ca"
+}

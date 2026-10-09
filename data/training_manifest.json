@@ -1,0 +1,19 @@
+{
+  "checkpoint_sha256": "9599242bed3ffd7118593874cfe6462b30d1bae97dde1c8b6131d6fa44f70e0f",
+  "feature_schema": "typed_context_2822_v1",
+  "feature_source": "BODE e7 archived typed_context; T-domain original td_classifiers.build_features on archived clean SSL26 states",
+  "files_sha256": {
+    "data/expected_labels.json": "d1e1bda73a73d58fa6e61dc84cbf6075c4fe07f7fe9381323c0d44e5537debfb",
+    "data/head_selection.json": "3dca08372c48919949e40300faab98db02d8791b7a0912725a3234dec20474c8",
+    "data/training_features.npz": "ff60765dbc5d86dc123fe719aeac1b9c8414e2959041761eb9277f35c80aad53",
+    "data/training_rows.json": "5167b58be13bc327de66a3519f660118d5d6dbc2aba8247e6acbe75149c33384"
+  },
+  "labels_are_features": false,
+  "matrix_sha256": "187ee40ba5e0e8cff6281082c2253bcaa8720f7f958ba5edb5295bb536bbac81",
+  "rows": 494,
+  "source_matrix_sha256": {
+    "bode1": "70436975c5c3f99f43e4bb1ae8a3e67c66b7a46010b58849e5aaa7f6de20e04b",
+    "bode2": "578c59195db57cb0ae54a5c21127df3fd2b3882dbe11e7dee55e603e4794aebf",
+    "tdomain": "37a8215979ab49e490a11081b2e220d09cd53e5421fcc55eec525ba1e0cc0193"
+  }
+}

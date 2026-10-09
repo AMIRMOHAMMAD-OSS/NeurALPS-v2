@@ -1,4 +1,0 @@
-[console_scripts]
-neuralps-preflight = neuralps_v2.phase2_preflight:main
-neuralps-threshold-summary = neuralps_v2.evaluation_protocol:main
-neuralps-validate-data = neuralps_v2.manifest_adapter:main

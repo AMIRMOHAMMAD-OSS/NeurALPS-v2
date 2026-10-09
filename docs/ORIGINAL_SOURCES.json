@@ -1,0 +1,26 @@
+[
+  {
+    "original": "NeurALPS_Assembly_v1_20261002/src/assembly_model.py",
+    "portable": "neuralps/assembly_model.py",
+    "sha256": "551772090b00a9bf0d5a44fa85a4014e103079c4dabd1f2b99259ed5441dd2f4",
+    "modification": "none"
+  },
+  {
+    "original": "NeurALPS_Assembly_v1_20261002/src/masking_contract.py",
+    "portable": "neuralps/masking.py",
+    "sha256": "a9a4e94fec9d07882e6e7527bcd57298cb8d79f7f2362c4c47c165545024bc2a",
+    "modification": "none"
+  },
+  {
+    "original": "NeurALPS_E0_closeout_20260930/src/connection_rules.py",
+    "portable": "neuralps/connection_rules.py",
+    "sha256": "40f314de7f631961740d549034d2a3d041e2bfa2ce86ffceb4176ce4a0200e94",
+    "modification": "none"
+  },
+  {
+    "original": "NeurALPS_Assembly_v1_20261002/domain_vocabulary.json",
+    "portable": "neuralps/data/domain_vocabulary.json",
+    "sha256": "e603358662900852b37207efca73fa2f1859d0f6ed7bffc9a3c1a1b878a8abde",
+    "modification": "none"
+  }
+]

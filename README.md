@@ -1,171 +1,156 @@
-# NeurALPS v2
+# NeurALPS: frozen compatibility and supervised activity
 
-**Learning transferable representations of nonribosomal peptide synthetase assembly lines.**
+This release includes a fitted supervised head trained on all **494 reviewed
+engineered assemblies**: 324 BODE1, 105 BODE2 and 65 T-domain. It also ports the
+original SSL26 encoder and its local/full-context reconstruction scoring to a
+small Python package and a Colab notebook.
 
-NeurALPS v2 is a research framework for adapting frozen protein-language-model features to NRPS assembly organization. It represents individual domains and the physical connections between them, learns from natural assembly lines, and evaluates transfer to engineered construct activity and quantitative T-domain production.
+The notebook is `notebooks/NeurALPS.ipynb`. It has a saved-feature demonstration
+that works now, followed by new-sequence inference using the small runtime
+asset bundle exported from Jean Zay. New-sequence inference has not yet been
+run in Colab with the actual model assets. The repository URL is not yet set.
 
-The goal is an NRPS foundation encoder that can support multiple downstream tasks. Construct activity prediction is one application of that encoder.
+## What is included
 
-**Current status:** Phase‑2.2 design and reference implementation. The repository contains A/C/D encoder components, masking and scoring contracts, training helpers, and evaluation utilities. Full data integration and production training are in progress; pretrained NeurALPS checkpoints and new benchmark results are not included.
+| Item | Location |
+| --- | --- |
+| Fitted all-494 supervised model | `models/all494/supervised_head.npz` |
+| Exact training row identities and labels | `models/all494/training_rows.json` |
+| Reproducible frozen training features | `data/training_features.npz` |
+| Regularization selection evidence | `data/head_selection.json` |
+| Colab notebook | `notebooks/NeurALPS.ipynb` |
+| CPU training command | `scripts/fit_all_labels.py` |
+| Minimal runtime exporter | `scripts/export_runtime.py` |
+| Original-versus-port numerical check | `scripts/verify_runtime.py` |
+| Source parity and validation results | `docs/` |
+| Real annotated input example | `examples/AI_1_annotated.json` |
 
-[Architecture](docs/architecture.md) · [Execution plan](docs/execution-plan.md) · [Data interface](docs/data-interface.md) · [Evaluation](docs/evaluation.md) · [Roadmap](ROADMAP.md)
+## Finish the runtime transfer
 
-## Why this representation?
+Follow `RUN_ON_JEAN_ZAY.txt`. The exporter reads the SHA-pinned checkpoint and
+training-only centering means. It writes portable NPZ weights, historical
+embedding references and three golden fixtures. It compares the port against
+the original implementation on BODE1, BODE2 and T-domain examples before
+creating the final ZIP.
 
-Engineering changes can occur inside a domain, at an intra-module seam, or between proteins. A representation organized only around modules can obscure those changes. NeurALPS instead uses domains and connections as its invariant objects:
+The exported bundle also preserves the installed Transformers 4.57.6 fork,
+including its metadata and licenses. The recorded Git source URL returned 404
+during porting; the actual installed implementation is therefore exported.
+The exporter must run in the existing `envs/esmc_connections_hf` environment.
+It performs CPU inference for the check and does not run training or ESMC.
 
-| Object | Meaning | Representation |
-|---|---|---|
-| **D — domain** | One catalytic or carrier domain, including terminal TE | Its own frozen ESM-C feature |
-| **B — intra-module boundary** | A covalent seam between consecutive domains | A connection window with domain flanks |
-| **J — same-protein linker** | A covalent connection between annotated modules | The same connection encoding used for B |
-| **J — chain break** | Continuation across separate proteins | Two ordered protein termini |
-| **M — module** | Biological annotation and display context | Metadata; no module token |
+The 2.3 GB ESMC weights are downloaded in Colab from the pinned Hugging Face
+revision and verified by SHA-256. Existing local copies can also be supplied.
+The large natural-data cache is not required for default inference.
 
-B and same-protein J share the neural **COVALENT** type. A physical chain break uses **BREAK**. Relabeling module boundaries must leave the model's inputs and predictions unchanged.
-
-Connection windows use 20 residues from each flanking domain and the intervening sequence, with a 512-aa cap under the audited extraction policy. ESM-C-600M features have width 1152. Mean-pooled features are the initial control; preserving pretrained residue detail is a separate, preferred input experiment.
-
-## Architecture
-
-![NeurALPS A, C and optional D architecture](Screenshot%202026-09-15%20000724.png)
-
-| Variant | Computation | Role |
-|---|---|---|
-| **A** | Shared 1152→256 input projection and four local context blocks | Local domain–connection representations |
-| **C** | Complete A encoder plus two assembly-context blocks with four latent slots | Distant context and terminal constraints |
-| **D** | Two shared-weight A+C passes with detached feedback adapters | Conditional refinement experiment |
-
-A and C form the main development path. D is retained only if measured gains justify its additional computation.
-
-The outputs have distinct meanings:
-
-1. **Contextual features:** reusable domain and connection states before a scoring head.
-2. **Natural-support diagnostics:** conditional scores from a masked natural-data checkpoint.
-3. **Supervised activity predictions:** construct-level logits learned from activity labels.
-
-An optional additive activity head exposes an exact decomposition of its construct logit. These contributions and candidate-edit tables are model explanations; biological interface claims require validation. See [Interpretability](docs/interpretability.md).
-
-## Quick start
-
-Use Python 3.11 or 3.12. From the repository root:
+## Run locally
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e .
-
-neuralps-preflight --config configs/phase2_final_config.json
-python scripts/check_contracts.py
-python examples/synthetic_manifest.py
+python -m pip install -e '.[inference]'
+python scripts/verify_runtime.py --assets /path/to/runtime_assets
 ```
 
-On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell.
-
-This lightweight installation runs NumPy metrics, schema checks and the synthetic masking example. Neural tests report explicit skips until PyTorch is installed. Preflight checks configuration; its output intentionally records `training_validated: false`.
-
-### Enable the neural reference
-
-Install a PyTorch build suitable for your machine, then install the model extra. The Linux/Windows CPU reference command is:
+Install the preserved Transformers wheel and its declared dependencies as shown
+in the notebook. New-sequence extraction uses CUDA BF16 with the original
+pooling, tokenizer and historical-reference check. CPU-only use supports the
+saved-feature demonstration, final-head fitting and cached-input encoder tests.
 
 ```bash
-python -m pip install "torch==2.8.0" --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -e ".[model]"
-python scripts/check_contracts.py --require-torch
-python examples/model_smoke.py --variant A
+neuralps examples/AI_1_annotated.json \
+  --assets /path/to/runtime_assets \
+  --esmc-model /path/to/ESMC-600M \
+  --head models/all494 \
+  --output results/AI_1.json
 ```
 
-For CUDA, ROCm or macOS, use the [official PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/). ESM-C weights are not needed for synthetic smoke checks because those checks use clearly labeled artificial feature vectors.
+The JSON input supplies proteins in biosynthetic order with mature physical
+sequences and already resolved domain annotations. Coordinates are **0-based,
+end-exclusive**, separately for each protein. The package reconstructs covalent
+windows and physical protein breaks from those inputs. It does not infer
+domain annotations or chain order from an unannotated FASTA. Ambiguous domain
+types such as a generic `Condensation` are rejected rather than assigned an
+invented subtype. No silent sequence truncation is permitted; each independently
+embedded physical feature must fit the original 2046-residue limit.
 
-`--require-torch` fails when neural checks are skipped. A synthetic forward pass checks software integration; it is not a trained activity prediction.
+## The pretrained output
 
-### Build A, then inherit it into C
+`pretrained_map` queries each physical domain or boundary independently while
+hiding all overlapping and identical sequence features. For a protein break,
+the two physical termini are masked together and their losses are averaged
+once. Both local-only and full-context results use the same frozen weights.
 
-```python
-from neuralps_v2.phase2_training import (
-    build_bundle,
-    copy_variant,
-    load_config,
-)
+`joint_domain_indices` selects a contiguous exchanged region. The package masks
+that region and all touching boundaries together, including their physical
+masking closure, and reports domain mean, boundary mean, balanced mean and
+neighborhood mean. Those regional results are distinct from the single-object
+map. The local balanced joint-region score is the deployment default for an
+identified exchange; the notebook retains full context for comparison.
 
-config = load_config("configs/phase2_final_config.json")
-a = build_bundle(config, variant="A", input_variant="pool")
-c = build_bundle(config, variant="C", input_variant="pool")
-copy_variant(a, c)
-```
+Scores reproduce the original `1 - mean(slot_loss)` implementation:
+25% raw cosine agreement plus 75% agreement after subtracting the training-only
+type mean, with the original degenerate-target fallback. Raw values are in
+[-1, 1]. They are not activity probabilities. Queries with missing physical
+features or fewer than two remaining independent contextual objects retain an
+explicit unavailable status; scores are not fabricated for them.
 
-This example constructs untrained bundles. During the training programme, load the selected trained A checkpoint before copying to C. Complete shared weights, including the masked decoder, are inherited.
+No natural-reference percentiles are supplied for an unsupported score/mask
+contract. The release does not conflate single-object and joint-region results.
 
-## Training programme
+## The supervised output
 
-| Stage | Work | Evidence required to advance |
-|---|---|---|
-| **E0 / E1** | Connect audited data, repair evaluation, freeze donor folds and establish ESM-C/TE baselines | Correct joins, split isolation and matched baseline predictions |
-| **F1** | Pretrain A on natural assembly lines | Valid masking, connected gradients and measured transfer |
-| **F2** | Compare pooled features with pretrained residue detail; test the span objective | Matched input and compute comparisons |
-| **F3** | Extend the selected A into C | Benefit beyond equal additional A training |
-| **T1 / T2** | Adapt independent task copies to Bode activity and quantitative T-domain production | Donor/group-controlled learning curves and uncertainty |
-| **I1 / F4** | Validate interpretation; optionally test D | Rebuilt candidate features and explicit benefit/cost evidence |
+The head uses 2822 full-context typed features, training-only standardization
+and the original deterministic L-BFGS logistic solver. The encoder is frozen.
+L2 = **10** minimizes mean archived inner-validation BCE on each BODE donor
+benchmark separately and on their equal-weight average. T-domain outcomes did
+not select the penalty; all 65 are included in the final fit. Each labelled
+assembly has equal weight in that fit, matching the original solver objective.
 
-The main natural-data objective predicts clean, detached ESM-C targets from masked context using cosine loss. Candidate ranking is a low-weight auxiliary. Residue-span prediction is evaluated independently. Every input channel contaminated by a masked target must be removed or recomputed.
+The native BODE2 control is recorded separately and is not among the 494
+engineered training cases. Unreviewed T-domain hybrids are not relabelled.
+All six BODE1 cases with incomplete joint-mask scores have complete typed
+features and are included. No joint-mask scores are needed by this head.
 
-There is no end-to-end `train.py` command yet. The [execution plan](docs/execution-plan.md) specifies the remaining exporters, samplers, runner, checkpointing and evaluation work. The [experiment registry](configs/experiment_registry.json) records the stage dependencies and acceptance criteria.
+`activity_score` is the sigmoid of the assembly logit. It is uncalibrated. The
+optional per-object output is an exact additive decomposition of that logit,
+with count, absent-type normalization and intercept effects retained in an
+assembly context term. These are signed classifier contributions, not causal
+defect scores or individual domain probabilities.
 
-## Data and evaluation
-
-The inventory below comes from the project audit dated 12 September 2026. Data and embeddings are stored separately from this repository.
-
-| Dataset | Reported scale | Role |
-|---|---|---|
-| Natural Route-A core | 42,415 assembly lines: 33,932 train / 4,242 dev / 4,241 test | Natural representation learning |
-| Natural connection cache | 943,506 unique windows in the overall cache | Only split-permitted occurrences enter training |
-| Bode-1 | 324 constructs; 173 active / 151 inactive; 21 donor parts | Supervised development and donor-held-out evaluation |
-| Bode-2 | 106 constructs; 64 active / 42 inactive | Retrospective external transfer benchmark |
-
-Bode-1 and Bode-2 have no reported shared donor parts. Homology and assay differences still require separate reporting. The manuscript's 105 single-exchange cohort must be mapped explicitly to the 106-record Bode-2 inventory.
-
-Required comparisons include frozen ESM-C with the same head, the same encoder without NRPS pretraining, direct connection features, and TE-similarity/source-context baselines where available. Report donor-held-out folds, nested label budgets, five paired seeds, and uncertainty. Do not tune model choices on Bode-2.
-
-The iGEM manuscript's 43/51 active constructs above its TE threshold describe **84.3% selection precision**. The corresponding binary threshold accuracy is **73.3%** on that cohort. These quantities must not be compared directly with another model's AUROC. The [evidence discussion](docs/architecture.md#22-igem-manuscript-a-required-biological-baseline) documents the calculation and its limits.
-
-## Bring your data
+To reproduce the final fit:
 
 ```bash
-cp configs/data_paths.template.json configs/data_paths.local.json
+python scripts/fit_all_labels.py --output results/refit_all494
 ```
 
-Fill the local file with paths to audited manifests, embedding indexes, labels and fixed folds. Relative paths resolve from that file's directory. Then run:
+The trainer refuses missing, duplicated, relabelled or mismatched training rows.
+`training_predictions.json` is explicitly in sample. This combined refit has
+no independently measured held-out AUROC. Prior dataset-specific evaluations
+are preserved separately in `docs/ARCHIVED_SUPERVISED_RESULTS.json`.
 
-```bash
-neuralps-preflight --config configs/phase2_final_config.json --paths configs/data_paths.local.json
-```
+## Validation status
 
-The unfilled template fails intentionally. Follow the [canonical schema](docs/data-interface.md) and [data directory guide](data/README.md) to export your current tables. Sequence hashes and context-aware feature keys serve different purposes and must remain separate.
+The portable typed pooling exactly matches 88 saved T-domain feature rows.
+The portable head exactly replays 1077 held-out predictions from 56 archived
+donor-fold models. Local tests check overlap and alias masking, two-slot
+protein breaks, missing-input handling, the loss formula, head optimization,
+training membership, NPZ weight loading and score decomposition.
 
-## Repository layout
+The actual SSL checkpoint is not in the received source handoff. Its numerical
+parity check is run by the Jean Zay exporter and repeated by the notebook.
+ESMC GPU extraction must pass its historical reference check in the selected
+Colab runtime. A BF16-capable GPU is required for the exact extraction mode;
+a T4 does not satisfy that hardware requirement.
 
-| Path | Contents |
-|---|---|
-| `src/neuralps_v2/` | Encoders, heads, losses, adapters and numerical utilities |
-| `configs/` | Phase-2 settings, experiment registry and local-path template |
-| `tests/` | Masking, topology, scoring, inheritance and training contracts |
-| `examples/` | Synthetic data preparation and an optional neural smoke check |
-| `scripts/` | Contract-check and repository-release helpers |
-| `docs/` | Full architecture, execution, evaluation and interpretation guides |
-| `reports/` | Recorded local verification and prior reference evidence |
-| `.github/` | CPU CI workflow, issue forms and pull-request template |
+## Repository contents and provenance
 
-## Verification and development
+Commit the source, notebook, modest training-feature NPZ and fitted head.
+Keep runtime bundles and ESMC weights in versioned downloadable assets. The
+`.gitignore` excludes them and generated results. No repository has been pushed
+from this workspace. Once the target URL is supplied, the notebook's GitHub
+source option can be set to an actual commit.
 
-See [the recorded repository checks](reports/repository_verification.json) for the exact executed status. Editable installation, wheel installation, the synthetic example and 22 contract checks passed. Eleven PyTorch checks were skipped because PyTorch was unavailable in the validation environment. GPU correctness and trained performance remain to be evaluated.
-
-The GitHub Actions workflow runs the lightweight checks and a separate CPU PyTorch gate. Its first hosted result will be available after the repository is pushed.
-
-See [Contributing](CONTRIBUTING.md), [Reproducibility](docs/reproducibility.md), and [GitHub setup](docs/github-setup.md).
-
-## Citation and license status
-
-Use [CITATION.cff](CITATION.cff) and record the exact commit used. Citation metadata currently credits the project collectively; no paper DOI or trained-model release is claimed.
-
-A project license has not yet been selected. No `LICENSE` file is included. See [License status](docs/license-status.md) for the remaining release metadata and third-party attribution boundaries.
+Three original modules and the domain vocabulary are preserved byte for byte;
+their hashes are in `docs/ORIGINAL_SOURCES.json`. The logistic solver changes
+only its import path. Existing project and upstream rights are retained; no
+new license grant is asserted. The supplied data and results remain research
+development evidence, with the original studies' endpoint definitions.

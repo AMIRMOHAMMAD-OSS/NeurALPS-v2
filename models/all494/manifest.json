@@ -1,0 +1,21 @@
+{
+  "by_dataset": {
+    "bode1": 324,
+    "bode2": 105,
+    "tdomain": 65
+  },
+  "checkpoint_sha256": "9599242bed3ffd7118593874cfe6462b30d1bae97dde1c8b6131d6fa44f70e0f",
+  "encoder_updates": 0,
+  "feature_schema": "typed_context_2822_v1",
+  "fit_scope": "All 494 reviewed engineered examples; BODE2 native control excluded",
+  "l2": 10.0,
+  "model_sha256": "6114f032aad84bcc9c5718f225d59cb7ea5ec996b68d9fc8796b3ef6e15947d4",
+  "positives": 286,
+  "rows_sha256": "5167b58be13bc327de66a3519f660118d5d6dbc2aba8247e6acbe75149c33384",
+  "schema": "neuralps_all494_typed_context_v1",
+  "score_interpretation": "Uncalibrated sigmoid activity score",
+  "selection": "Minimize mean archived inner-validation BCE, first within each BODE donor benchmark, then equally across BODE1 and BODE2; ties prefer stronger regularization. T-domain outcomes do not select this penalty. Deployment choice, not a new validation experiment.",
+  "trained_rows": 494,
+  "training_manifest_sha256": "e6ec7afb0c076915ff1fbb59054623dd47848a2851f38b0886dd2f90395ba168",
+  "validation": "This combined refit has no independent held-out performance estimate"
+}

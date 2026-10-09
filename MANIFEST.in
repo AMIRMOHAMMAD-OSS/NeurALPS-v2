@@ -1,8 +1,0 @@
-include README.md CHANGELOG.md CONTRIBUTING.md CITATION.cff ROADMAP.md
-recursive-include configs *.json
-recursive-include docs *.md *.svg
-recursive-include examples *.py *.md
-recursive-include scripts *.py
-recursive-include tests *.py
-recursive-include reports *.json *.md
-include data/README.md

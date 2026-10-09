@@ -1,0 +1,3954 @@
+[
+  {
+    "activity_score": 0.8163812372914231,
+    "assembly_id": "BODE_pIN241_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.492019782055154,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8290391189972163,
+    "assembly_id": "BODE_pIN241_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.578832577931019,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6159436064625278,
+    "assembly_id": "BODE_pIN241_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4723660114166863,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7330331271471,
+    "assembly_id": "BODE_pIN241_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0100663157998062,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.8191078304226096,
+    "assembly_id": "BODE_pIN241_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.510314630718031,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7763328492077167,
+    "assembly_id": "BODE_pIN241_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2444223448134113,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7524083377595494,
+    "assembly_id": "BODE_pIN241_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1114983129853826,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7431643641592743,
+    "assembly_id": "BODE_pIN241_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.062480906117895,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5599234400967408,
+    "assembly_id": "BODE_pIN241_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.24085134871377045,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5917517067114165,
+    "assembly_id": "BODE_pIN241_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.37121158127915466,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7313546032109478,
+    "assembly_id": "BODE_pIN241_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.001506153016301,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7106434170122456,
+    "assembly_id": "BODE_pIN241_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8985110020965599,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7337472245941454,
+    "assembly_id": "BODE_pIN241_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0137184476110979,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7118746599192172,
+    "assembly_id": "BODE_pIN241_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9045062624019384,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5720662197833186,
+    "assembly_id": "BODE_pIN241_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.29028628903940146,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5972786705085082,
+    "assembly_id": "BODE_pIN241_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3941389565922697,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6973781815771447,
+    "assembly_id": "BODE_pIN241_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8348439464369248,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7002584883932845,
+    "assembly_id": "BODE_pIN241_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8485290607497644,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.640743596232021,
+    "assembly_id": "BODE_pIN241_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5785930208378363,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5104993868456783,
+    "assembly_id": "BODE_pIN241_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.042003721934850136,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.47442554205120724,
+    "assembly_id": "BODE_pIN241_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.10238718301883543,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3452869724191957,
+    "assembly_id": "BODE_pIN241_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6398211384116037,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.49659148902709205,
+    "assembly_id": "BODE_pIN241_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.013634255096987569,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6069676316892405,
+    "assembly_id": "BODE_pIN241_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.43458349398717444,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.63059538330792,
+    "assembly_id": "BODE_pIN241_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5347718604740516,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5828580475041489,
+    "assembly_id": "BODE_pIN241_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3345170929018085,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4390014771887596,
+    "assembly_id": "BODE_pIN241_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.24521549442000684,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4073110450045674,
+    "assembly_id": "BODE_pIN241_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.37509260165091934,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5539406440854036,
+    "assembly_id": "BODE_pIN241_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.21660551219190408,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5943927849112371,
+    "assembly_id": "BODE_pIN241_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3821551140906942,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7661475376361212,
+    "assembly_id": "BODE_pIN241_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1866843452853213,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7522985844917375,
+    "assembly_id": "BODE_pIN241_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1109092479037928,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5972771965095861,
+    "assembly_id": "BODE_pIN241_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.39413282864147753,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6591871142765064,
+    "assembly_id": "BODE_pIN241_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6596738264248801,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7385700443921791,
+    "assembly_id": "BODE_pIN241_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.038549552874032,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7326717036793727,
+    "assembly_id": "BODE_pIN241_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0082202438479435,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7437101024295383,
+    "assembly_id": "BODE_pIN241_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0653420954598263,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7143586097635302,
+    "assembly_id": "BODE_pIN241_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9166479470605913,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5534263011236779,
+    "assembly_id": "BODE_pIN241_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.21452414687931698,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.612316688564604,
+    "assembly_id": "BODE_pIN241_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.45706081494461526,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7007634457413002,
+    "assembly_id": "BODE_pIN241_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8509359655421842,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7078156343357824,
+    "assembly_id": "BODE_pIN241_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.88479866401535,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7167790449842564,
+    "assembly_id": "BODE_pIN241_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9285402743336244,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.49203410345654164,
+    "assembly_id": "BODE_pIN241_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.03186628247785983,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6444769906694547,
+    "assembly_id": "BODE_pIN241_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5948491496819585,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3587174284269664,
+    "assembly_id": "BODE_pIN241_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5809352179602965,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.48111127951097715,
+    "assembly_id": "BODE_pIN241_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07559085510424374,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6734596851113401,
+    "assembly_id": "BODE_pIN241_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7238747182619704,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7830669596842027,
+    "assembly_id": "BODE_pIN241_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2836294732228435,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7707645132030738,
+    "assembly_id": "BODE_pIN241_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2126330947510342,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6200442619015707,
+    "assembly_id": "BODE_pIN241_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.48973609840688603,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6836286379618134,
+    "assembly_id": "BODE_pIN241_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7704981233203019,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7589347576884723,
+    "assembly_id": "BODE_pIN241_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1468482036117431,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7433596261884274,
+    "assembly_id": "BODE_pIN241_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0635041654772905,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6815611712280516,
+    "assembly_id": "BODE_pIN243_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7609556106018098,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6540806315620589,
+    "assembly_id": "BODE_pIN243_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6370249250047032,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.46111530233114384,
+    "assembly_id": "BODE_pIN243_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.15585350380329605,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5069228776849432,
+    "assembly_id": "BODE_pIN243_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.027693280476488447,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6446324800139924,
+    "assembly_id": "BODE_pIN243_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5955278344492979,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6586727374832401,
+    "assembly_id": "BODE_pIN243_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.657385075246262,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6230950304997749,
+    "assembly_id": "BODE_pIN243_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5027059586908817,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5638446357531357,
+    "assembly_id": "BODE_pIN243_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.256780225136074,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.41424956972096777,
+    "assembly_id": "BODE_pIN243_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.34642519435355207,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.391720487778709,
+    "assembly_id": "BODE_pIN243_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.44008595629891384,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5539940975918463,
+    "assembly_id": "BODE_pIN243_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2168218464926917,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6020417855252781,
+    "assembly_id": "BODE_pIN243_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.41397984305578295,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6137012264346944,
+    "assembly_id": "BODE_pIN243_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.46289711297740527,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5682609608649672,
+    "assembly_id": "BODE_pIN243_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.27475942171397766,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.46100571564251164,
+    "assembly_id": "BODE_pIN243_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.15629452541562067,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.43820974242816385,
+    "assembly_id": "BODE_pIN243_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.24843091331809636,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5555239046054012,
+    "assembly_id": "BODE_pIN243_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.22301536587877735,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5962341160833728,
+    "assembly_id": "BODE_pIN243_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.38979818742224664,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5275527796044315,
+    "assembly_id": "BODE_pIN243_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.11032287863904061,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3783147776609375,
+    "assembly_id": "BODE_pIN243_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4967072970164578,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.36870414006661384,
+    "assembly_id": "BODE_pIN243_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5377800933512535,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.23735808021017168,
+    "assembly_id": "BODE_pIN243_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.1672187276205679,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3706553753855783,
+    "assembly_id": "BODE_pIN243_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5294062759414864,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.516718974261846,
+    "assembly_id": "BODE_pIN243_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.06690083834820193,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4881878874363268,
+    "assembly_id": "BODE_pIN243_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.04725724304915335,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4081302008289176,
+    "assembly_id": "BODE_pIN243_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.3717004336873558,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3095689986098873,
+    "assembly_id": "BODE_pIN243_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.8021350392680824,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.24930261770814535,
+    "assembly_id": "BODE_pIN243_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.1023351268422852,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.38429799174816004,
+    "assembly_id": "BODE_pIN243_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4713448218321911,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4807842705801675,
+    "assembly_id": "BODE_pIN243_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07690079283736306,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6400212604586994,
+    "assembly_id": "BODE_pIN243_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5754564223921697,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.602862576250159,
+    "assembly_id": "BODE_pIN243_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.41740689434101597,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.47927698046162814,
+    "assembly_id": "BODE_pIN243_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.08293959042215698,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4850275524811993,
+    "assembly_id": "BODE_pIN243_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.05990770070558238,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5912334503788729,
+    "assembly_id": "BODE_pIN243_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3690667387502881,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.62443781686792,
+    "assembly_id": "BODE_pIN243_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5084276935602372,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6201087232808037,
+    "assembly_id": "BODE_pIN243_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.49000972491048556,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5598905908705517,
+    "assembly_id": "BODE_pIN243_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.24071803808124004,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4464739466487702,
+    "assembly_id": "BODE_pIN243_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2149277727894598,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4396783095399054,
+    "assembly_id": "BODE_pIN243_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.24246772121210663,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5495611863126545,
+    "assembly_id": "BODE_pIN243_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.1988978675622815,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6019631934470522,
+    "assembly_id": "BODE_pIN243_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.41365182320147553,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6186264213452125,
+    "assembly_id": "BODE_pIN243_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.48372215472391356,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.35592808969598005,
+    "assembly_id": "BODE_pIN243_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5930816666211505,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5291850812460843,
+    "assembly_id": "BODE_pIN243_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.11687317772196334,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.24090831793713868,
+    "assembly_id": "BODE_pIN243_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.147706125718487,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3503087425059033,
+    "assembly_id": "BODE_pIN243_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6176823744878768,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5928250665963276,
+    "assembly_id": "BODE_pIN243_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3756564532668165,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6608141684328537,
+    "assembly_id": "BODE_pIN243_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6669245304085918,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6200068385220997,
+    "assembly_id": "BODE_pIN243_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4895772514049523,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.49714446152453357,
+    "assembly_id": "BODE_pIN243_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.011422278087476034,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5070142897435873,
+    "assembly_id": "BODE_pIN243_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.028058999751092217,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6090578115915833,
+    "assembly_id": "BODE_pIN243_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4433534986055834,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6332783476350844,
+    "assembly_id": "BODE_pIN243_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.546306933323288,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6444869986501063,
+    "assembly_id": "BODE_pIN244_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5948928288208363,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6144453347353692,
+    "assembly_id": "BODE_pIN244_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4660369796254062,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.43214489118637156,
+    "assembly_id": "BODE_pIN244_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2731053677871768,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.45966692037367485,
+    "assembly_id": "BODE_pIN244_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.16168362246753282,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6038144512106209,
+    "assembly_id": "BODE_pIN244_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.42138429169221187,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6323979806148899,
+    "assembly_id": "BODE_pIN244_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5425180282245308,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5879324338958898,
+    "assembly_id": "BODE_pIN244_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3554247016537572,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5282841899981415,
+    "assembly_id": "BODE_pIN244_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.11325767074224447,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3905667507515955,
+    "assembly_id": "BODE_pIN244_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.44493053439847835,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3493944266738587,
+    "assembly_id": "BODE_pIN244_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6217021340040259,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.516801630425186,
+    "assembly_id": "BODE_pIN244_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.06723183492030788,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5768740845379532,
+    "assembly_id": "BODE_pIN244_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.30995421108501037,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5976243532763083,
+    "assembly_id": "BODE_pIN244_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3955762879055594,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5491499860806999,
+    "assembly_id": "BODE_pIN244_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.19723688206798656,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.43462393869755866,
+    "assembly_id": "BODE_pIN244_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.26300995651749254,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.41400606923930994,
+    "assembly_id": "BODE_pIN244_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.34742879874351823,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5364985584587144,
+    "assembly_id": "BODE_pIN244_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.14625438000840696,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5854100119791531,
+    "assembly_id": "BODE_pIN244_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3450224257281515,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4988217391243413,
+    "assembly_id": "BODE_pIN244_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.004713052226813286,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.37306328779076636,
+    "assembly_id": "BODE_pIN244_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5190975204606625,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3601776367246741,
+    "assembly_id": "BODE_pIN244_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5745932353479506,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.23327296962754188,
+    "assembly_id": "BODE_pIN244_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.189921534108081,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.36830124079888116,
+    "assembly_id": "BODE_pIN244_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5395114412459971,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5007884319252701,
+    "assembly_id": "BODE_pIN244_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.0031537303149985485,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4815126499955239,
+    "assembly_id": "BODE_pIN244_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07398312713045396,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4078344495436025,
+    "assembly_id": "BODE_pIN244_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.37292491069317096,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.30644811885980383,
+    "assembly_id": "BODE_pIN244_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.816777576117881,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.24167529014430356,
+    "assembly_id": "BODE_pIN244_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.1435166221277537,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.38376969491802876,
+    "assembly_id": "BODE_pIN244_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.47357814570072915,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.48149070596363996,
+    "assembly_id": "BODE_pIN244_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07407102356639733,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6108032616611456,
+    "assembly_id": "BODE_pIN244_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4506899434600357,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5683851167049597,
+    "assembly_id": "BODE_pIN244_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2752654945448149,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.43658815627823827,
+    "assembly_id": "BODE_pIN244_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2550205605122699,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4462239041564406,
+    "assembly_id": "BODE_pIN244_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.21593959262268853,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5554496712734193,
+    "assembly_id": "BODE_pIN244_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2227147301812052,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6000055978952584,
+    "assembly_id": "BODE_pIN244_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4054884327261462,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5867606813412285,
+    "assembly_id": "BODE_pIN244_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3505901496098641,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5427778338241755,
+    "assembly_id": "BODE_pIN244_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.17153067720438958,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.40715511682446276,
+    "assembly_id": "BODE_pIN244_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.375738549721875,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4152875361810201,
+    "assembly_id": "BODE_pIN244_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.3421490729767524,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5313904867809577,
+    "assembly_id": "BODE_pIN244_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.12572730375300434,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5809511078777311,
+    "assembly_id": "BODE_pIN244_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3266790008802093,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5910345598918442,
+    "assembly_id": "BODE_pIN244_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3682438387112076,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.36416511110341243,
+    "assembly_id": "BODE_pIN244_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5573315542598627,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5236985892419084,
+    "assembly_id": "BODE_pIN244_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09486543773992961,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.2411153973096894,
+    "assembly_id": "BODE_pIN244_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.1465740813196539,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3562472828570626,
+    "assembly_id": "BODE_pIN244_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5916895682877219,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.579083894241893,
+    "assembly_id": "BODE_pIN244_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.31901382204941753,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6396514643579091,
+    "assembly_id": "BODE_pIN244_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5738517234194597,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6044578339351193,
+    "assembly_id": "BODE_pIN244_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4240745178983565,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4674585831223906,
+    "assembly_id": "BODE_pIN244_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.13034992018028396,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.48417126132845384,
+    "assembly_id": "BODE_pIN244_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.06333611874269607,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5934444093116215,
+    "assembly_id": "BODE_pIN244_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.37822286970323044,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6185201114204625,
+    "assembly_id": "BODE_pIN244_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4832715751111716,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.8315913807954463,
+    "assembly_id": "BODE_pIN24_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.5969479079029765,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8479886900664106,
+    "assembly_id": "BODE_pIN24_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.7189123729811218,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6405415931841449,
+    "assembly_id": "BODE_pIN24_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5777155846909874,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7629984945815492,
+    "assembly_id": "BODE_pIN24_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1691895651654753,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8365280524719262,
+    "assembly_id": "BODE_pIN24_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.632618654531034,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7885484887165696,
+    "assembly_id": "BODE_pIN24_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3161981882662945,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7693385718783581,
+    "assembly_id": "BODE_pIN24_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2045801919009724,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7639868492678972,
+    "assembly_id": "BODE_pIN24_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.17466304910401,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5748624359909241,
+    "assembly_id": "BODE_pIN24_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3017179738468672,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6246402568213576,
+    "assembly_id": "BODE_pIN24_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5092910136708284,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7515312972674824,
+    "assembly_id": "BODE_pIN24_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1067959618564043,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7228017022341912,
+    "assembly_id": "BODE_pIN24_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.958401787289997,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7457990707037268,
+    "assembly_id": "BODE_pIN24_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0763312071875661,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7245287699651788,
+    "assembly_id": "BODE_pIN24_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9670382761149774,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5854657118586997,
+    "assembly_id": "BODE_pIN24_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3452519263226966,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6168703261086752,
+    "assembly_id": "BODE_pIN24_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4762853274293724,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7108018647794654,
+    "assembly_id": "BODE_pIN24_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8992816775689112,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7088782788800138,
+    "assembly_id": "BODE_pIN24_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8899423664433141,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6602386912854341,
+    "assembly_id": "BODE_pIN24_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6643580852253408,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5300713835815701,
+    "assembly_id": "BODE_pIN24_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.12043088027139695,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.48729518489483326,
+    "assembly_id": "BODE_pIN24_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.05083020179965425,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3659400277784453,
+    "assembly_id": "BODE_pIN24_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.549674081926691,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.517919315060466,
+    "assembly_id": "BODE_pIN24_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.07170797151418096,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6242558525371115,
+    "assembly_id": "BODE_pIN24_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5076518515283038,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6582054685355677,
+    "assembly_id": "BODE_pIN24_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6553073734665806,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6169447466241643,
+    "assembly_id": "BODE_pIN24_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.47660022476841735,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.46414507419253836,
+    "assembly_id": "BODE_pIN24_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.14366630037253358,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.448776353256522,
+    "assembly_id": "BODE_pIN24_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2056159552592421,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5882409658677338,
+    "assembly_id": "BODE_pIN24_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3566983602124726,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6188882478013717,
+    "assembly_id": "BODE_pIN24_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4848320747398679,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7778169914453865,
+    "assembly_id": "BODE_pIN24_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2529898618724875,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.765797924273275,
+    "assembly_id": "BODE_pIN24_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1847340143296852,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6120233336853508,
+    "assembly_id": "BODE_pIN24_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.45582520927177717,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6802183276966578,
+    "assembly_id": "BODE_pIN24_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7547753278934523,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7538635911584376,
+    "assembly_id": "BODE_pIN24_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1193255483222233,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7428508523335732,
+    "assembly_id": "BODE_pIN24_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0608390297889136,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7593182853702036,
+    "assembly_id": "BODE_pIN24_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1489456633749118,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.734662656284754,
+    "assembly_id": "BODE_pIN24_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0184094112454916,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5722977164700808,
+    "assembly_id": "BODE_pIN24_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.29123198500338515,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6406502215591614,
+    "assembly_id": "BODE_pIN24_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5781874044315547,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.722055016232344,
+    "assembly_id": "BODE_pIN24_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.954678141768081,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7205052553708307,
+    "assembly_id": "BODE_pIN24_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9469692198133206,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7351542314409297,
+    "assembly_id": "BODE_pIN24_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0209326647770753,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5141040709956033,
+    "assembly_id": "BODE_pIN24_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.05643125459574061,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6619718606827286,
+    "assembly_id": "BODE_pIN24_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.672093904076331,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3824233207864689,
+    "assembly_id": "BODE_pIN24_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4792750730188606,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5017473106485233,
+    "assembly_id": "BODE_pIN24_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.006989271046059287,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6899245211752183,
+    "assembly_id": "BODE_pIN24_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.799766454084025,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7958029801798928,
+    "assembly_id": "BODE_pIN24_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3602663316639787,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7867036699849451,
+    "assembly_id": "BODE_pIN24_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3051692267752875,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6364482542069416,
+    "assembly_id": "BODE_pIN24_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5599814761399179,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7067694503646605,
+    "assembly_id": "BODE_pIN24_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8797453586209139,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7761273449134497,
+    "assembly_id": "BODE_pIN24_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2432392248720716,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7551604720366765,
+    "assembly_id": "BODE_pIN24_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1263272643666846,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6042258038713895,
+    "assembly_id": "BODE_pIN263_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4231041387149795,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.564531842533626,
+    "assembly_id": "BODE_pIN263_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.25957511394896365,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.40473457160389203,
+    "assembly_id": "BODE_pIN263_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.3857759307219724,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.39452260154517016,
+    "assembly_id": "BODE_pIN263_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.42834080495183274,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5558988592961975,
+    "assembly_id": "BODE_pIN263_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.22453403909375247,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5902301254490064,
+    "assembly_id": "BODE_pIN263_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3649167834486879,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5625688783557382,
+    "assembly_id": "BODE_pIN263_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.251594319830741,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4814892916838794,
+    "assembly_id": "BODE_pIN263_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07407668844905091,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.36591646418790874,
+    "assembly_id": "BODE_pIN263_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5497756382867007,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.2955275275555317,
+    "assembly_id": "BODE_pIN263_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.8686872683215938,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4725198908238581,
+    "assembly_id": "BODE_pIN263_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.11003131388685938,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5482131624412172,
+    "assembly_id": "BODE_pIN263_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.1934537235973876,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.569520934933592,
+    "assembly_id": "BODE_pIN263_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2798968490720385,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5125707169985212,
+    "assembly_id": "BODE_pIN263_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.050293466475130444,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.42117594951041337,
+    "assembly_id": "BODE_pIN263_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.31794786752398835,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.375017857455203,
+    "assembly_id": "BODE_pIN263_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.51074943268273,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5008698582077831,
+    "assembly_id": "BODE_pIN263_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.0034794363414375473,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5556837340542783,
+    "assembly_id": "BODE_pIN263_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.22366268921771704,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4995127757133503,
+    "assembly_id": "BODE_pIN263_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.0019488977634573579,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3476927863587251,
+    "assembly_id": "BODE_pIN263_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6291963454602527,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3487633849438914,
+    "assembly_id": "BODE_pIN263_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6244793279928915,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.21397742286902735,
+    "assembly_id": "BODE_pIN263_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.301115007257636,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.34534865443386475,
+    "assembly_id": "BODE_pIN263_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6395482977809959,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.49535052183087,
+    "assembly_id": "BODE_pIN263_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.01859844876182082,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4221511200592142,
+    "assembly_id": "BODE_pIN263_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.31394902676018405,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.34239916624422434,
+    "assembly_id": "BODE_pIN263_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6526209023877234,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.2718799456864001,
+    "assembly_id": "BODE_pIN263_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.9851053516640618,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.18750276818079742,
+    "assembly_id": "BODE_pIN263_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.4663188982739344,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3231163126428522,
+    "assembly_id": "BODE_pIN263_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.7394870927169297,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4259105959534704,
+    "assembly_id": "BODE_pIN263_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.29855568477941746,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5735252017716453,
+    "assembly_id": "BODE_pIN263_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2962486039563689,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5230349441311565,
+    "assembly_id": "BODE_pIN263_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09220504654700457,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.42396677892521484,
+    "assembly_id": "BODE_pIN263_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.30651023393894555,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3947412876486423,
+    "assembly_id": "BODE_pIN263_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4274254080093551,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5124552921862298,
+    "assembly_id": "BODE_pIN263_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.04983147787992581,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5648721120640844,
+    "assembly_id": "BODE_pIN263_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2609593720607588,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5414169322498379,
+    "assembly_id": "BODE_pIN263_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.16604820349291075,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4862118275058582,
+    "assembly_id": "BODE_pIN263_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.05516667673489595,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3913284377096598,
+    "assembly_id": "BODE_pIN263_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.44173161411770984,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.35754308226831266,
+    "assembly_id": "BODE_pIN263_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5860438956922731,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4780265303953594,
+    "assembly_id": "BODE_pIN263_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.08795052820845894,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5360728409642441,
+    "assembly_id": "BODE_pIN263_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.14454249409283546,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5964636690127995,
+    "assembly_id": "BODE_pIN263_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.39075180946927984,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.33605332467527277,
+    "assembly_id": "BODE_pIN263_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.680931986243974,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5312656757270319,
+    "assembly_id": "BODE_pIN263_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.12522609187974157,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.22365214554511054,
+    "assembly_id": "BODE_pIN263_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.2445087626433393,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3349623352506517,
+    "assembly_id": "BODE_pIN263_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.685825584356268,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5763907454499996,
+    "assembly_id": "BODE_pIN263_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3079743473510278,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6002908401721287,
+    "assembly_id": "BODE_pIN263_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4066770891790324,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5550935050680793,
+    "assembly_id": "BODE_pIN263_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.22127244081716083,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.45313734421103974,
+    "assembly_id": "BODE_pIN263_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.18800241695085645,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4271988231407842,
+    "assembly_id": "BODE_pIN263_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2932891373950494,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5449277541127148,
+    "assembly_id": "BODE_pIN263_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.18019703609889626,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5834711787912282,
+    "assembly_id": "BODE_pIN263_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.33703939903944474,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6165087293444212,
+    "assembly_id": "BODE_pIN264_pIN200_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.47475562378264463,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5878001330964495,
+    "assembly_id": "BODE_pIN264_pIN200_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.35487863485289883,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4258546172874514,
+    "assembly_id": "BODE_pIN264_pIN200_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.29878463018758733,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.42908743248311326,
+    "assembly_id": "BODE_pIN264_pIN200_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.28557537276049866,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.575507814263539,
+    "assembly_id": "BODE_pIN264_pIN200_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3043592088632886,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.605731472516795,
+    "assembly_id": "BODE_pIN264_pIN200_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4294045542169343,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5522248792416319,
+    "assembly_id": "BODE_pIN264_pIN237_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.20966420945018127,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.49056699255699837,
+    "assembly_id": "BODE_pIN264_pIN237_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.03773650733824352,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3780687535021777,
+    "assembly_id": "BODE_pIN264_pIN237_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4977534838005238,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3114715622425992,
+    "assembly_id": "BODE_pIN264_pIN237_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.7932485801491498,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4781171146210892,
+    "assembly_id": "BODE_pIN264_pIN237_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.087587493050022,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.54328075941771,
+    "assembly_id": "BODE_pIN264_pIN237_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.17355738975275345,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5652708338687071,
+    "assembly_id": "BODE_pIN264_pIN238_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.26258173768001236,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5110027439796682,
+    "assembly_id": "BODE_pIN264_pIN238_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.04401808196374868,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4113083542325625,
+    "assembly_id": "BODE_pIN264_pIN238_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.35855933814515056,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3753744523339978,
+    "assembly_id": "BODE_pIN264_pIN238_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.509228279136922,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.497705025040278,
+    "assembly_id": "BODE_pIN264_pIN238_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.00917996430597845,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.555019774069029,
+    "assembly_id": "BODE_pIN264_pIN238_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2209738969961945,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4711934278250609,
+    "assembly_id": "BODE_pIN264_pIN239_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.11535403242982745,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.35483457086987114,
+    "assembly_id": "BODE_pIN264_pIN239_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.5978550798669484,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3464461155440839,
+    "assembly_id": "BODE_pIN264_pIN239_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6346976889969562,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.21616734735493798,
+    "assembly_id": "BODE_pIN264_pIN239_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.2881426803188591,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.34722309783215505,
+    "assembly_id": "BODE_pIN264_pIN239_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6312679137276345,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4784020902007964,
+    "assembly_id": "BODE_pIN264_pIN239_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.08644543154191231,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4454372165312762,
+    "assembly_id": "BODE_pIN264_pIN240_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.21912371687364646,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.37057984887545825,
+    "assembly_id": "BODE_pIN264_pIN240_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.529730062472836,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.2953932771296286,
+    "assembly_id": "BODE_pIN264_pIN240_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.869332195955284,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.21239841697762504,
+    "assembly_id": "BODE_pIN264_pIN240_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.3105285203792183,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.34712867186781976,
+    "assembly_id": "BODE_pIN264_pIN240_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6316845390771242,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4452115477573772,
+    "assembly_id": "BODE_pIN264_pIN240_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.22003731652948483,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5833225619688255,
+    "assembly_id": "BODE_pIN264_pIN246_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.33642792031374963,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5367660359454544,
+    "assembly_id": "BODE_pIN264_pIN246_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.14733006393101836,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4204429892753647,
+    "assembly_id": "BODE_pIN264_pIN246_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.3209551452996002,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.41272220825167294,
+    "assembly_id": "BODE_pIN264_pIN246_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.3527232002552762,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5224669777389599,
+    "assembly_id": "BODE_pIN264_pIN246_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.08992846724492909,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5736446422190954,
+    "assembly_id": "BODE_pIN264_pIN246_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2967369426585696,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.560224799413579,
+    "assembly_id": "BODE_pIN264_pIN247_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.24207444210663723,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5144046176050251,
+    "assembly_id": "BODE_pIN264_pIN247_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.05763441893596555,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.39767161167482196,
+    "assembly_id": "BODE_pIN264_pIN247_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4151762237262588,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3860825003285295,
+    "assembly_id": "BODE_pIN264_pIN247_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.46380947571481296,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.501951221386948,
+    "assembly_id": "BODE_pIN264_pIN247_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.007804925168509835,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5572677413023195,
+    "assembly_id": "BODE_pIN264_pIN247_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2300806038394459,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5670893397135002,
+    "assembly_id": "BODE_pIN264_pIN269_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2699854775166894,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.3474910855710564,
+    "assembly_id": "BODE_pIN264_pIN269_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6300857894207208,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5224311323790546,
+    "assembly_id": "BODE_pIN264_pIN269_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.08978479618733914,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.2247071030975984,
+    "assembly_id": "BODE_pIN264_pIN269_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -1.2384430992792614,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.3374416703244586,
+    "assembly_id": "BODE_pIN264_pIN269_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.6747159320702139,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5546704749021234,
+    "assembly_id": "BODE_pIN264_pIN269_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.21955968453359734,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6129766700812387,
+    "assembly_id": "BODE_pIN264_pIN285_pIN111|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4598419013763419,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5752248124528996,
+    "assembly_id": "BODE_pIN264_pIN285_pIN204|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3032008840714876,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4581640118169372,
+    "assembly_id": "BODE_pIN264_pIN285_pIN235|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.1677361264033696,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4512228677409992,
+    "assembly_id": "BODE_pIN264_pIN285_pIN275|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.19573102596960018,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5625405227929736,
+    "assembly_id": "BODE_pIN264_pIN285_pIN286|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2514790940235751,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5937414970188358,
+    "assembly_id": "BODE_pIN264_pIN285_pIN45|assembly_line=1",
+    "dataset": "bode1",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3794543705958432,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5050530354428008,
+    "assembly_id": "NRPS001_(pIG101+pIG017+pIG018)_",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.020212829920032982,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5461998066518008,
+    "assembly_id": "NRPS002_(pIG110+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.18532785664119164,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5030674388597626,
+    "assembly_id": "NRPS003_(pIG102+pIG017+pIG018)_",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.012269909373662014,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5425009837280995,
+    "assembly_id": "NRPS004_(pIG103+pIG017+pIG018)_",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.170415164248746,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4896870999458494,
+    "assembly_id": "NRPS005_(pIG104+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.04125745151208021,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5363756203182433,
+    "assembly_id": "NRPS006_(pIG105+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.14576000197729885,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5349936207519882,
+    "assembly_id": "NRPS007_(pIG106+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.14020369869067503,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5152172399279269,
+    "assembly_id": "NRPS008_(pIG107+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.0608877636079489,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5512458416589394,
+    "assembly_id": "NRPS009_(pIG108+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2057056769990165,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.45351450733942134,
+    "assembly_id": "NRPS010_(pIG109+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.18648050258834376,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5501228239915674,
+    "assembly_id": "NRPS011_(pIG111+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2011669663380571,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5214687240623914,
+    "assembly_id": "NRPS012_(pIG112+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.08592772838963053,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5264690736948234,
+    "assembly_id": "NRPS013_(pIG113+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.10597536566803925,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.47551975530350515,
+    "assembly_id": "NRPS014_(pIG114+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.0979993346039959,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4966578419406568,
+    "assembly_id": "NRPS015_(pIG116+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.013368831346572074,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.54955913876968,
+    "assembly_id": "NRPS016_(pIG118+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.1988895961248436,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.569763265978229,
+    "assembly_id": "NRPS017_(pIG119+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2808853502825568,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5319158521187765,
+    "assembly_id": "NRPS018_(pIG120+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.12783722120195304,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4847415492792914,
+    "assembly_id": "NRPS019_(pIG122+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.061052760022513364,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.506535613747136,
+    "assembly_id": "NRPS020_(pIG123+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.026143944014900944,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5311545011624685,
+    "assembly_id": "NRPS021_(pIG124+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.12477965417399331,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5295438638216362,
+    "assembly_id": "NRPS022_(pIG125+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.11831327511086573,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6413356712571785,
+    "assembly_id": "NRPS023_(pIG126+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5811660543049558,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5077383799566542,
+    "assembly_id": "NRPS024_(pIG127+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.030955991615073453,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5008167790141493,
+    "assembly_id": "NRPS025_(pIG129+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.00326711896271481,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.46789152086175506,
+    "assembly_id": "NRPS026_(pIG130+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.12861090069074582,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5362571041548733,
+    "assembly_id": "NRPS027_(pIG131+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.1452834231237625,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.38459556708204284,
+    "assembly_id": "NRPS028_(pIG133+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4700873591330718,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5917471848497816,
+    "assembly_id": "NRPS029_(pIG134+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.37119286357294623,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6467222005822912,
+    "assembly_id": "NRPS030_(pIG136+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6046621222651796,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6197158327997367,
+    "assembly_id": "NRPS031_(pIG137+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.48834225710516566,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5232935996300092,
+    "assembly_id": "NRPS032_(pIG139+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09324189398661503,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.629049250278614,
+    "assembly_id": "NRPS033_(pIG140+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.528140249247041,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5511906346155443,
+    "assembly_id": "NRPS034_(pIG142+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.20548250705123577,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5860866332948569,
+    "assembly_id": "NRPS035_(pIG143+pIG017+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.34781092427588384,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5266733330030309,
+    "assembly_id": "NRPS036_(pIG016+pIG145+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.10679471685468883,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.49600718311977315,
+    "assembly_id": "NRPS037_(pIG016+pIG154+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.015971607031653123,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5481020557510798,
+    "assembly_id": "NRPS038_(pIG016+pIG146+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.19300513545260423,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5507724293077092,
+    "assembly_id": "NRPS039_(pIG016+pIG147+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2037921115774525,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.43884764173083246,
+    "assembly_id": "NRPS040_(pIG016+pIG148+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.2458401567420973,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5207425879888387,
+    "assembly_id": "NRPS041_(pIG016+pIG149+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.08301799903954515,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5236139579515006,
+    "assembly_id": "NRPS042_(pIG016+pIG150+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09452615309656914,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.46557087043824824,
+    "assembly_id": "NRPS043_(pIG016+pIG151+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.13793479867902675,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5257975393431582,
+    "assembly_id": "NRPS044_(pIG016+pIG152+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.10328186976307246,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.48066951166528904,
+    "assembly_id": "NRPS045_(pIG016+pIG153+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.07736051155398849,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.574441706757715,
+    "assembly_id": "NRPS046_(pIG016+pIG155+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.2999966863317571,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5393258500471884,
+    "assembly_id": "NRPS047_(pIG016+pIG156+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.15762897378883656,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5242165870186679,
+    "assembly_id": "NRPS048_(pIG016+pIG157+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09694219699146756,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4993913499068174,
+    "assembly_id": "NRPS049_(pIG016+pIG158+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.0024346015752781947,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5031780722202904,
+    "assembly_id": "NRPS050_(pIG016+pIG160+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.012712460079892796,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5230224901677326,
+    "assembly_id": "NRPS051_(pIG016+pIG162+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09215512479492999,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5597080052056839,
+    "assembly_id": "NRPS052_(pIG016+pIG163+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.23997709712387283,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.45758524508195053,
+    "assembly_id": "NRPS053_(pIG016+pIG164+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.17006774386955276,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5228675709947267,
+    "assembly_id": "NRPS054_(pIG016+pIG166+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09153414036821195,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.49851476439372033,
+    "assembly_id": "NRPS055_(pIG016+pIG167+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.0059409598989077494,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5139969671935578,
+    "assembly_id": "NRPS056_(pIG016+pIG168+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.05600250081262237,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4847960500150474,
+    "assembly_id": "NRPS057_(pIG016+pIG169+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.06083455459383075,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6109917888025349,
+    "assembly_id": "NRPS058_(pIG016+pIG170+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4514830682604644,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5232750420591262,
+    "assembly_id": "NRPS059_(pIG016+pIG171+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.09316750237456906,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.46993813354256114,
+    "assembly_id": "NRPS060_(pIG016+pIG173+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.12039267361932066,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.48758109390716936,
+    "assembly_id": "NRPS061_(pIG016+pIG174+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.049685843398462715,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.4883759111253639,
+    "assembly_id": "NRPS062_(pIG016+pIG175+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.04650473496488522,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.39860798638690886,
+    "assembly_id": "NRPS063_(pIG016+pIG177+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.4112685471357019,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.5531785148897213,
+    "assembly_id": "NRPS064_(pIG016+pIG178+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.21352160848745735,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.615139292463198,
+    "assembly_id": "NRPS065_(pIG016+pIG180+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.4689672637540289,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5834457110223326,
+    "assembly_id": "NRPS066_(pIG016+pIG181+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.33693460836485317,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.4847052601467888,
+    "assembly_id": "NRPS067_(pIG016+pIG183+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": -0.061198052182449614,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5978557150747195,
+    "assembly_id": "NRPS068_(pIG016+pIG184+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.3965385037508311,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7010809289260513,
+    "assembly_id": "NRPS069_(pIG016+pIG186+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8524504567473365,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.601737845061434,
+    "assembly_id": "NRPS070_(pIG016+pIG187+pIG018)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.41271140794325195,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7595055300382807,
+    "assembly_id": "NRPS071_(pIG016+pIG017+pIG189)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.149970507806427,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6676463543215406,
+    "assembly_id": "NRPS072_(pIG016+pIG017+pIG198)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6975590238290384,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.677330635247921,
+    "assembly_id": "NRPS073_(pIG016+pIG017+pIG190)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7415313762200488,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7742624920015252,
+    "assembly_id": "NRPS074_(pIG016+pIG017+pIG191)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2325380978375664,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6226814764572405,
+    "assembly_id": "NRPS075_(pIG016+pIG017+pIG192)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5009453935348861,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7302999207152279,
+    "assembly_id": "NRPS076_(pIG016+pIG017+pIG193)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.996144775941814,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7647622386181946,
+    "assembly_id": "NRPS077_(pIG016+pIG017+pIG194)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1789682330961595,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6278801733784352,
+    "assembly_id": "NRPS078_(pIG016+pIG017+pIG195)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.523133424560559,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7324482682381275,
+    "assembly_id": "NRPS079_(pIG016+pIG017+pIG196)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0070797774288838,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5886113937704623,
+    "assembly_id": "NRPS080_(pIG016+pIG017+pIG197)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.35822791130024084,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7999674950668864,
+    "assembly_id": "NRPS081_(pIG016+pIG017+pIG199)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3860912176681648,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6764111259572764,
+    "assembly_id": "NRPS082_(pIG016+pIG017+pIG200)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7373272629005526,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.755415328953877,
+    "assembly_id": "NRPS083_(pIG016+pIG017+pIG201)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.127706150758577,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6264033997478339,
+    "assembly_id": "NRPS084_(pIG016+pIG017+pIG202)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5168179657550883,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6411395396070849,
+    "assembly_id": "NRPS085_(pIG016+pIG017+pIG204)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5803135005086812,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6852036925013631,
+    "assembly_id": "NRPS086_(pIG016+pIG017+pIG206)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.777790368574477,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7685026411211672,
+    "assembly_id": "NRPS087_(pIG016+pIG017+pIG207)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1998755349646844,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6396450651354844,
+    "assembly_id": "NRPS088_(pIG016+pIG017+pIG208)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5738239608689362,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6351529705978428,
+    "assembly_id": "NRPS089_(pIG016+pIG017+pIG210)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.554387700252327,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6382552102926566,
+    "assembly_id": "NRPS090_(pIG016+pIG017+pIG211)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5677992571049627,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7161385349265725,
+    "assembly_id": "NRPS091_(pIG016+pIG017+pIG212)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.925387312667922,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6662602373883286,
+    "assembly_id": "NRPS092_(pIG016+pIG017+pIG213)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6913188056267496,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.820410819077677,
+    "assembly_id": "NRPS093_(pIG016+pIG017+pIG214)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.5191332994753082,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7390672264217567,
+    "assembly_id": "NRPS094_(pIG016+pIG017+pIG215)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0411260846102575,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6396575056094927,
+    "assembly_id": "NRPS095_(pIG016+pIG017+pIG217)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5738779331376648,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7131217938143406,
+    "assembly_id": "NRPS096_(pIG016+pIG017+pIG218)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9105944676417022,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6561444923991859,
+    "assembly_id": "NRPS097_(pIG016+pIG017+pIG219)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6461594944040325,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.5529347919510926,
+    "assembly_id": "NRPS098_(pIG016+pIG017+pIG221)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.21253561438552873,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7658305467580149,
+    "assembly_id": "NRPS099_(pIG016+pIG017+pIG222)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1849159145018737,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8095972115727811,
+    "assembly_id": "NRPS100_(pIG016+pIG017+pIG224)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.4473950869727228,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8108607386526799,
+    "assembly_id": "NRPS101_(pIG016+pIG017+pIG225)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.455612747518545,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6441141635682687,
+    "assembly_id": "NRPS102_(pIG016+pIG017+pIG227)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.5932659877736213,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8170755454459067,
+    "assembly_id": "NRPS103_(pIG016+pIG017+pIG228)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.4966583065063848,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7183931635288285,
+    "assembly_id": "NRPS104_(pIG016+pIG017+pIG230)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9365050994660715,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8127493196968222,
+    "assembly_id": "NRPS105_(pIG016+pIG017+pIG231)",
+    "dataset": "bode2",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.467974466626482,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6550762162850657,
+    "assembly_id": "AI_10|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6414281137490749,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.664925869992384,
+    "assembly_id": "AI_11|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6853237697962522,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7989960340087378,
+    "assembly_id": "AI_12|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3800313428960325,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8054002113188682,
+    "assembly_id": "AI_13|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.4203942269575605,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7747700524446968,
+    "assembly_id": "AI_14|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2354444093405434,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7915697086096293,
+    "assembly_id": "AI_15|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3344132954872574,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7849177770233227,
+    "assembly_id": "AI_16|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2945585821823913,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7309694546996621,
+    "assembly_id": "AI_17|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9995467487824083,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.792314300782192,
+    "assembly_id": "AI_18|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3389322820707268,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7490683113900466,
+    "assembly_id": "AI_19|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.093649437658535,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.774324708431088,
+    "assembly_id": "AI_1|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2328941023833908,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7920373773126549,
+    "assembly_id": "AI_20|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3372502193423748,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7146236508574074,
+    "assembly_id": "AI_21|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9179472092275782,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7881391716791107,
+    "assembly_id": "AI_22|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3137450991528479,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7757641517805216,
+    "assembly_id": "AI_23|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.241150154081775,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7106819154239506,
+    "assembly_id": "AI_24|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8986982318377541,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.8027865365159397,
+    "assembly_id": "AI_25|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.4038021330400154,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6965682114108266,
+    "assembly_id": "AI_26|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.831008887024598,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.8050933167990947,
+    "assembly_id": "AI_27|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.418437295854152,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7562734919543913,
+    "assembly_id": "AI_28|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.132356344619341,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7696754304939135,
+    "assembly_id": "AI_29|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2064794212229564,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7852694937753404,
+    "assembly_id": "AI_2|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2966431805692866,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.777476632058673,
+    "assembly_id": "AI_30|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2510214678247042,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8043026618049888,
+    "assembly_id": "AI_31|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.413406370519117,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7527733081650346,
+    "assembly_id": "AI_32|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1134584344679759,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7393876866640609,
+    "assembly_id": "AI_33|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0427884796976092,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.6739967206939492,
+    "assembly_id": "AI_34|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7263178049240977,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7075200471867651,
+    "assembly_id": "AI_35|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.8833698374298016,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.672069513874234,
+    "assembly_id": "AI_36|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.7175601250586204,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7867399788743241,
+    "assembly_id": "AI_37|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3053856208429273,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7918050609253593,
+    "assembly_id": "AI_38|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.335840378436353,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7689153856675333,
+    "assembly_id": "AI_39|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2021969925466152,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7742530688928808,
+    "assembly_id": "AI_3|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2324841845482641,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7732340310447926,
+    "assembly_id": "AI_40|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.226663247718698,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7929486098073486,
+    "assembly_id": "AI_41|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3427913904985083,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7900367624093445,
+    "assembly_id": "AI_42|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3251470227730135,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7832987420535525,
+    "assembly_id": "AI_43|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.284994444875417,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7867112643764395,
+    "assembly_id": "AI_44|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3052144856818815,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7672532149043685,
+    "assembly_id": "AI_45|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1928657802879536,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.8072989850447728,
+    "assembly_id": "AI_46|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.4325542467493897,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7741525443333204,
+    "assembly_id": "AI_47|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.231909143424898,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7940380867149874,
+    "assembly_id": "AI_49|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.349440163521676,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7546605020492141,
+    "assembly_id": "AI_4|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1236250246970318,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7982062278419323,
+    "assembly_id": "AI_50|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.375120748955184,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7959717838660976,
+    "assembly_id": "AI_51|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3613054391501695,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7845142282788212,
+    "assembly_id": "AI_52|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2921698258882384,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7828450524472758,
+    "assembly_id": "AI_53|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2823236440591923,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7939864401606745,
+    "assembly_id": "AI_54|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3491243921320348,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7911068149163767,
+    "assembly_id": "AI_55|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3316099513058586,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7939553316086745,
+    "assembly_id": "AI_56|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3489342201098586,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7845676072731745,
+    "assembly_id": "AI_57|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2924856097886,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7840662829934263,
+    "assembly_id": "AI_58|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2895220665302423,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7832402607963082,
+    "assembly_id": "AI_59|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2846499478659972,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7361776864076685,
+    "assembly_id": "AI_5|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.0261956893719837,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7913694678431575,
+    "assembly_id": "AI_60|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3332000494176481,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7914707128557582,
+    "assembly_id": "AI_61|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3338133792650309,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7748335007006959,
+    "assembly_id": "AI_62|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.2358080430393277,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7765995601049023,
+    "assembly_id": "AI_63|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.245958995135332,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7678911078781835,
+    "assembly_id": "AI_64|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1964413123338722,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7960046808578792,
+    "assembly_id": "AI_65|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.3615080181026096,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7624353876072811,
+    "assembly_id": "AI_66|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.1660781286718338,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.7293645766775517,
+    "assembly_id": "AI_6|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.9914010984233754,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7461554042057609,
+    "assembly_id": "AI_7|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 1.078211642944642,
+    "observed_activity": 1
+  },
+  {
+    "activity_score": 0.6624695037254189,
+    "assembly_id": "AI_8|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.6743186591257737,
+    "observed_activity": 0
+  },
+  {
+    "activity_score": 0.7029298915114379,
+    "assembly_id": "AI_9|context=minimal_GxpS_T3",
+    "dataset": "tdomain",
+    "evaluation": "IN_SAMPLE_DEPLOYMENT_FIT",
+    "logit": 0.861288992794768,
+    "observed_activity": 0
+  }
+]
