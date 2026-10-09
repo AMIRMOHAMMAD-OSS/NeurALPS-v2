@@ -1,0 +1,13 @@
+{
+  "source_run": "e8_reference_scale_652486",
+  "files_sha256": {
+    "natural_scale_audit.json": "c1cd826490727df1217ea1c856198574261eab588afc3fe0da52e8e29828c6fd",
+    "protocol.json": "fd0e5ef598770672f668381b8bc647ba831488facb0e3d2f13e35a4101803dd8",
+    "reference.json": "1e8f4ed338a0c654707e0d599345ad64858d4322d2976dfdb081d4eeb491f75b",
+    "reference_seal.json": "a087769baf6e7c8298c5bfea66b338f005725354460b2face04dc8ebedd94c53",
+    "summary.json": "596d91b27659f57ffc5272b1d99f38ece54a1e7417c796281c97b5365725ff54"
+  },
+  "calibration_scope": "Connected calibration components from natural internal_test; 3515 assemblies were partitioned for calibration and audit. Natural train/dev were audited for overlap, not fitted as reference scores.",
+  "repertoire_scope": "All natural train, dev and internal_test assemblies; keep separate from calibration.",
+  "original_scale_code_sha256": "e738f1db284fc3b9219ca04e471f321d2344a26445a8753c1ba695c289442b78"
+}

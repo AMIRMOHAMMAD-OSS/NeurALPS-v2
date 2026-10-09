@@ -5,10 +5,21 @@ engineered assemblies**: 324 BODE1, 105 BODE2 and 65 T-domain. It also ports the
 original SSL26 encoder and its local/full-context reconstruction scoring to a
 small Python package and a Colab notebook.
 
-The notebook is `notebooks/NeurALPS.ipynb`. It has a saved-feature demonstration
-that works now, followed by new-sequence inference using the small runtime
-asset bundle exported from Jean Zay. New-sequence inference has not yet been
-run in Colab with the actual model assets. The repository URL is not yet set.
+The notebook is [`notebooks/NeurALPS.ipynb`](notebooks/NeurALPS.ipynb).
+
+[Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/notebooks/NeurALPS.ipynb)
+
+The assembly explorer draws clickable domain cartoons and boundary connectors.
+It loads source and runtime assets automatically. Select any set of physical
+objects to score them jointly, or a contiguous segment to search matching
+natural fragments. Export the interactive HTML, results JSON, donor feature
+FASTA, or a complete-domain variant input. A live Colab GPU session can rebuild
+and test supported variants.
+
+The original natural-reference scale and the full natural-repertoire bank need
+one export from Jean Zay before their download assets can be published. Follow
+[the explorer setup](docs/EXPLORER_SETUP.md). No percentiles or candidate counts
+are invented when those assets are absent.
 
 ## What is included
 
@@ -25,9 +36,10 @@ run in Colab with the actual model assets. The repository URL is not yet set.
 | Source parity and validation results | `docs/` |
 | Real annotated input example | `examples/AI_1_annotated.json` |
 
-## Finish the runtime transfer
+## Runtime provenance
 
-Follow `RUN_ON_JEAN_ZAY.txt`. The exporter reads the SHA-pinned checkpoint and
+The initial runtime is published as a versioned asset. To reproduce its export,
+follow `RUN_ON_JEAN_ZAY.txt`. The exporter reads the SHA-pinned checkpoint and
 training-only centering means. It writes portable NPZ weights, historical
 embedding references and three golden fixtures. It compares the port against
 the original implementation on BODE1, BODE2 and T-domain examples before
@@ -93,8 +105,27 @@ type mean, with the original degenerate-target fallback. Raw values are in
 features or fewer than two remaining independent contextual objects retain an
 explicit unavailable status; scores are not fabricated for them.
 
-No natural-reference percentiles are supplied for an unsupported score/mask
-contract. The release does not conflate single-object and joint-region results.
+The explorer applies the original **full-context, single-object natural
+reference** from `e8_reference_scale_652486`. It preserves connected-component
+sampling, exact strata, length fallback, minimum support and midrank ties.
+That calibration used a partition of the 3,515 natural internal-test assemblies;
+the training and development splits were audited for overlap, not used to fit
+reference scores. It is not an activity-probability calibration.
+
+For a **joint segment**, a separate repertoire comparison scores same-type,
+same-topology natural fragments against the same masked-query predictions.
+The donor bank includes all 34,927 natural assemblies across train/dev/test.
+Exact feature duplicates count once. Candidates whose features are already
+visible in the query context are excluded to avoid an alias shortcut. Protein
+breaks contribute once after averaging their two terminal slots. Candidate
+ranking preserves the float32 cached ESMC vectors.
+
+A donor's native boundary feature is a retrieval approximation for a new seam.
+The “Test variant” action rebuilds recipient boundaries and reruns ESMC and
+NeurALPS for complete-domain splices on one physical chain. Boundary-only and
+cross-protein candidates can be downloaded but are not automatically spliced.
+Local-only and jointly masked scores never inherit the old single-object
+full-context percentile.
 
 ## The supervised output
 
@@ -145,9 +176,8 @@ a T4 does not satisfy that hardware requirement.
 
 Commit the source, notebook, modest training-feature NPZ and fitted head.
 Keep runtime bundles and ESMC weights in versioned downloadable assets. The
-`.gitignore` excludes them and generated results. No repository has been pushed
-from this workspace. Once the target URL is supplied, the notebook's GitHub
-source option can be set to an actual commit.
+`.gitignore` excludes them and generated results. The notebook resolves and records its exact source commit on startup.
+The runtime bundle remains pinned to the 2026-10-09 release and its SHA-256.
 
 Three original modules and the domain vocabulary are preserved byte for byte;
 their hashes are in `docs/ORIGINAL_SOURCES.json`. The logistic solver changes

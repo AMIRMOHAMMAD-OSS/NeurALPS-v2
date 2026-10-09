@@ -1,0 +1,66 @@
+{
+  "python_tests": {
+    "passed": 23,
+    "suite": "tests/test_release.py and tests/test_explorer.py"
+  },
+  "original_encoder_parity": {
+    "device": "cpu",
+    "fixtures": [
+      {
+        "fixture": "golden_bode1",
+        "max_score_error": 1.7881393432617188e-07,
+        "max_state_error": 5.7220458984375e-06,
+        "status": "PASS"
+      },
+      {
+        "fixture": "golden_bode2",
+        "max_score_error": 1.7881393432617188e-07,
+        "max_state_error": 3.814697265625e-06,
+        "status": "PASS"
+      },
+      {
+        "fixture": "golden_tdomain",
+        "max_score_error": 4.172325134277344e-07,
+        "max_state_error": 2.86102294921875e-06,
+        "status": "PASS"
+      }
+    ],
+    "scope": "Encoder and reconstruction parity on cached inputs; ESMC GPU gate runs separately",
+    "status": "PASS"
+  },
+  "archived_reference_adapter": {
+    "fixture": "AI_10|context=minimal_GxpS_T3",
+    "objects": 17,
+    "strata_match": true,
+    "mask_fractions_match": true,
+    "max_raw_score_difference": 2.980232238769531e-07
+  },
+  "preview": {
+    "data": "Real archived AI_10 native scores and original reference percentiles",
+    "precomputed_joint_selections": 172,
+    "candidate_rankings_fabricated": false
+  },
+  "not_run": [
+    "Actual Jean Zay natural-bank export",
+    "Full natural-corpus candidate retrieval",
+    "Live Colab JavaScript/Python integration and new-sequence variant ESMC inference",
+    "Visual browser rendering (Chromium could not start in this environment)"
+  ],
+  "client_dom_checks": {
+    "status": "PASS",
+    "checks": [
+      "17 clickable objects",
+      "original percentile and higher-reference count",
+      "Shift range selection",
+      "Ctrl multiple selection",
+      "local-context gray reference colors",
+      "touching-boundary expansion",
+      "cached joint results",
+      "empty-selection controls",
+      "JSON and HTML download actions",
+      "Colab callback JSON protocol"
+    ],
+    "rendering": "DOM execution only; headless Chromium could not start in this environment",
+    "errors": []
+  }
+}
