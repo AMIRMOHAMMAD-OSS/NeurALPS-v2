@@ -1,25 +1,9 @@
-# NeurALPS: frozen compatibility and supervised activity
+# NeurALPS
 
-This release includes a fitted supervised head trained on all **494 reviewed
-engineered assemblies**: 324 BODE1, 105 BODE2 and 65 T-domain. It also ports the
-original SSL26 encoder and its local/full-context reconstruction scoring to a
-small Python package and a Colab notebook.
-
-The notebook is [`notebooks/NeurALPS.ipynb`](notebooks/NeurALPS.ipynb).
+ notebook : [`notebooks/NeurALPS.ipynb`](notebooks/NeurALPS.ipynb).
 
 [Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/notebooks/NeurALPS.ipynb)
 
-The assembly explorer draws clickable domain cartoons and boundary connectors.
-It loads source and runtime assets automatically. Select any set of physical
-objects to score them jointly, or a contiguous segment to search matching
-natural fragments. Export the interactive HTML, results JSON, donor feature
-FASTA, or a complete-domain variant input. A live Colab GPU session can rebuild
-and test supported variants.
-
-The original natural-reference scale and the full natural-repertoire bank need
-one export from Jean Zay before their download assets can be published. Follow
-[the explorer setup](docs/EXPLORER_SETUP.md). No percentiles or candidate counts
-are invented when those assets are absent.
 
 ## What is included
 
@@ -51,7 +35,7 @@ during porting; the actual installed implementation is therefore exported.
 The exporter must run in the existing `envs/esmc_connections_hf` environment.
 It performs CPU inference for the check and does not run training or ESMC.
 
-The 2.3 GB ESMC weights are downloaded in Colab from the pinned Hugging Face
+The ESMC weights are downloaded in Colab from the pinned Hugging Face
 revision and verified by SHA-256. Existing local copies can also be supplied.
 The large natural-data cache is not required for default inference.
 
