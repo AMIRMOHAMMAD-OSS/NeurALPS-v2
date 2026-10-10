@@ -67,7 +67,7 @@ def capture_mount(data, ready=True):
     output.register_callback = lambda name, callback: callbacks.__setitem__(name, callback)
     def eval_js(script, **kwargs):
         events.append(dict(kind="Javascript", data=script))
-        return dict(ready=ready, parts=len(data["objects"])*2, choices=len(data["objects"]))
+        return dict(ready=ready, parts=len(data["objects"]), choices=len(data["objects"]))
     output.eval_js = eval_js
     output.no_vertical_scroll = lambda: None
     google = types.ModuleType("google")
@@ -169,10 +169,10 @@ async function mount(capture) {
 function by(root, id) { const found = root.querySelector('#'+id); assert(found, 'Missing '+id); return found; }
 function assertMounted(root, expected) {
   assert.equal(by(root,'assembly').textContent, expected.assembly_id);
-  assert.equal(root.querySelectorAll('.part').length, expected.objects.length * 2, 'Both compatibility maps must render');
+  assert.equal(root.querySelectorAll('#assemblysvg .part').length, expected.objects.length, 'The selected map must contain every assembly part');
   assert.equal(by(root,'range-start').options.length, expected.objects.length, 'Start selector populated');
   assert.equal(by(root,'range-end').options.length, expected.objects.length, 'End selector populated');
-  assert.equal(by(root,'connection').textContent, 'Live model session');
+  assert.match(by(root,'connection').textContent, /^Live\b/);
   assert(!by(root,'score').disabled, 'Score control initialized');
   assert(!by(root,'rank').disabled, 'Search control initialized');
 }
@@ -231,7 +231,7 @@ async function finish(root) {
   const savedRoot = savedDom.window.document;
   assert.equal(savedRoot.querySelector('#connection').textContent,'Saved result');
   assert.equal(savedRoot.querySelector('#assembly').textContent,fixture.payloads[1].assembly_id);
-  assert.equal(savedRoot.querySelectorAll('.part').length,fixture.payloads[1].objects.length*2);
+  assert.equal(savedRoot.querySelectorAll('#assemblysvg .part').length,fixture.payloads[1].objects.length);
   assert(!saved.includes('Notebook button'), 'Save must export only this explorer, not notebook DOM');
   assert(!saved.includes(fixture.mounts[0].callback));
   assert(!saved.includes(fixture.mounts[1].callback));
@@ -241,6 +241,26 @@ async function finish(root) {
   process.stdout.write(JSON.stringify({status:'PASS', checks:10}));
 })().catch(e=>{console.error(e.stack); dom.window.close(); process.exit(1);});
 """
+
+
+def run_javascript(testcase, fixture, script):
+    """Run the real browser scripts when the optional jsdom dependency exists."""
+    node = shutil.which("node")
+    if not node:
+        testcase.skipTest("Node.js is required for frontend execution regression")
+    env = os.environ.copy()
+    if not env.get("NEURALPS_JSDOM_MODULE"):
+        sibling = Path(__file__).resolve().parents[2]/"browser-tools/node_modules/jsdom"
+        if sibling.is_dir():
+            env["NEURALPS_JSDOM_MODULE"] = str(sibling)
+    probe = subprocess.run([node, "-e", "require(process.env.NEURALPS_JSDOM_MODULE || 'jsdom')"],
+                           env=env, capture_output=True, text=True)
+    if probe.returncode:
+        testcase.skipTest("Install jsdom and set NEURALPS_JSDOM_MODULE to run frontend execution regression")
+    result = subprocess.run([node, "-e", script], input=json.dumps(fixture),
+                            env=env, capture_output=True, text=True, timeout=30)
+    testcase.assertEqual(result.returncode, 0, result.stdout+result.stderr)
+    testcase.assertEqual(json.loads(result.stdout)["status"], "PASS")
 
 
 class ColabEmbeddingTests(unittest.TestCase):
@@ -269,25 +289,9 @@ class ColabEmbeddingTests(unittest.TestCase):
         self.assertIn('id="neuralps-bridge" type="application/json">null</script>', saved)
 
     def run_frontend(self, failure=None):
-        node = shutil.which("node")
-        if not node:
-            self.skipTest("Node.js is required for frontend execution regression")
-        env = os.environ.copy()
-        if not env.get("NEURALPS_JSDOM_MODULE"):
-            sibling = Path(__file__).resolve().parents[2]/"browser-tools/node_modules/jsdom"
-            if sibling.is_dir():
-                env["NEURALPS_JSDOM_MODULE"] = str(sibling)
-        probe = subprocess.run([node, "-e", "require(process.env.NEURALPS_JSDOM_MODULE || 'jsdom')"],
-                               env=env, capture_output=True, text=True)
-        if probe.returncode:
-            self.skipTest("Install jsdom and set NEURALPS_JSDOM_MODULE to run frontend execution regression")
         data = [payload("assembly in first cell"), payload("assembly in second cell")]
         mounts = [capture_mount(p)[0] for p in data]
-        result = subprocess.run([node, "-e", NODE_HARNESS],
-                                input=json.dumps(dict(payloads=data, mounts=mounts, failure=failure)),
-                                env=env, capture_output=True, text=True, timeout=30)
-        self.assertEqual(result.returncode, 0, result.stdout+result.stderr)
-        self.assertEqual(json.loads(result.stdout)["status"], "PASS")
+        run_javascript(self, dict(payloads=data, mounts=mounts, failure=failure), NODE_HARNESS)
 
     def test_real_frontend_mounts_after_notebook_strips_html_scripts(self):
         self.run_frontend()

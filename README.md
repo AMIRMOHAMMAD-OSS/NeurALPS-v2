@@ -6,19 +6,25 @@
 
 ## Compatibility explorer
 
-The live notebook shows local and global compatibility maps together. Their
-colors use the original model score in [-1, 1]; higher means better predicted
-reconstruction agreement. Click a part to inspect its existing Jean Zay
-natural-reference calibration. Sparse reference coverage no longer hides an
-available compatibility score.
+The live notebook has three map views: **Local**, **Global**, and **Supervised**.
+The white interface uses large Arial text and a red-to-blue score gradient.
+Local and global colors use the original compatibility score in [-1, 1];
+higher means better predicted reconstruction agreement. The supervised view
+shows the whole-assembly activity score and each part's signed contribution
+to its logit. Click a part for its natural-reference comparison.
 
 Use **Start** and **End** to select a domain, junction or continuous module
 such as T–C–A. **Score selected segment** masks the entire selection and its
 overlap/alias closure, then computes both local and global compatibility with
 the same mask. It does not average the separately computed map scores.
 **Find better replacements** ranks matching natural fragments in that recipient
-context. **Retest in assembly** rebuilds the replacement's junctions and compares
-both joint scores after re-embedding. The **Load assembly** button accepts an
+context. The released bank covers 34,927 natural assemblies across its training,
+development, and internal-test splits. The eligible-candidate count describes
+fragments matching the selection, not the size of the bank.
+Preview a candidate to see the replacement outlined in purple. Its new assembly
+has no map scores until **Retest in assembly** rebuilds the junctions and reruns
+the model. Retesting fills all three views with the new assembly's results and
+compares its joint scores with the original. The **Load assembly** button accepts an
 engineered assembly JSON while keeping the live session and downloaded bank.
 
 The published runtime and natural assets download automatically. Saved HTML
@@ -27,15 +33,14 @@ notebook. New saved files can be reopened through the notebook's input cell.
 Older HTML exports without an input sequence need the original annotated JSON.
 
 The live interface opens in an isolated frame through Colab's JavaScript API.
-Startup checks confirm that both maps and the segment selectors are populated.
+Startup checks confirm that the map and segment selectors are populated.
 If the interface fails to open, rerun **Open or reconnect the explorer**; the
 separate model-scoring cell does not need to run again. Reopening a notebook
 requires rerunning that display cell to restore its live connection.
 
-The separate whole-assembly activity classifier is shown in a collapsible
-details panel. Its probability-calibration status does not describe the fitted
-natural-reference scale. The release has no fitted local/joint-segment
-calibrator, and those scores do not inherit the global single-object scale.
+Supervised per-part contributions are signed additive logit terms, not domain
+activity probabilities. The release has no fitted local/joint-segment calibrator;
+those scores do not inherit the global single-object reference scale.
 
 
 ## What is included

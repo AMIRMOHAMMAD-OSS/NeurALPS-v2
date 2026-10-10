@@ -35,6 +35,30 @@ def cartoon_objects(record, result):
     return out
 
 
+def replacement_preview(record, variant_record, targets, candidate_id):
+    """Describe a same-topology splice without inventing post-splice scores."""
+    topology = lambda rec: [(o["kind"], o.get("domain_type"), o.get("chain"),
+                             o.get("protein_uid")) for o in rec["route"]]
+    require(topology(record) == topology(variant_record),
+            "Replacement changed the assembly topology; object positions cannot be compared")
+    domains = [j for j in targets if record["route"][j]["kind"] == 0]
+    require(domains, "Select at least one complete domain to preview a replacement")
+    affected = sorted(set(domains) | {
+        j for j, obj in enumerate(record["route"])
+        if obj["kind"] != 0 and (j-1 in domains or j+1 in domains)
+    })
+    metadata = dict(candidate_id=copy.deepcopy(candidate_id),
+                    base_assembly_id=record["assembly_id"],
+                    variant_assembly_id=variant_record["assembly_id"],
+                    selected_object_indices=list(targets),
+                    replaced_object_indices=domains, affected_object_indices=affected)
+    # Context changes can change scores anywhere in the assembly. Preview all
+    # rebuilt coordinates, but do not reuse the original map as variant scores.
+    empty = dict(pretrained_map=[dict(object_index=j, kind=o["kind"],
+                 status="NOT_RETESTED", raw=None) for j, o in enumerate(variant_record["route"])])
+    return metadata, cartoon_objects(variant_record, empty)
+
+
 class ExplorerSession:
     def __init__(self, spec, record, parents, vectors, runtime, head_dir=None, reference=None,
                  repertoire=None, repertoire_factory=None, model_dir=None, assets=None):
@@ -57,6 +81,7 @@ class ExplorerSession:
             self.result["supervised"] = dict(evidence, activity_score=float(expit(evidence["logit"])),
                 model_sha256=manifest["model_sha256"], training_examples=manifest["trained_rows"], calibrated_probability=False)
         self.searches, self.segments, self.variants = {}, {}, {}
+        self.variant_preview = None
         self.lock = threading.Lock()
 
     @classmethod
@@ -80,6 +105,7 @@ class ExplorerSession:
                     reference_available=self.reference is not None,
                     repertoire_available=self.repertoire is not None or self.repertoire_factory is not None,
                     segment_results=self.segments, candidate_results=self.searches,
+                    variant_preview=getattr(self, "variant_preview", None),
                     source="Live model session", coordinates="0-based, end-exclusive",
                     can_test_variants=bool(self.assets and self.model_dir),
                     input_spec=self.spec,
@@ -115,6 +141,9 @@ class ExplorerSession:
             touching = bool(request.get("touching_boundaries", False))
             targets = selection(self.record, selected, touching)
             suffix = ":"+",".join(map(str, targets))
+            if action == "variant":
+                require(all(m+suffix in self.segments for m in ("local", "full")),
+                        "Rank candidates before choosing a variant")
             if any(m+suffix not in self.segments for m in ("local", "full")):
                 scores = score_segment_modes(self.runtime, self.record, self.parents, self.vectors, targets)
                 self.segments.update({m+suffix: value for m, value in scores.items()})
@@ -128,7 +157,7 @@ class ExplorerSession:
                 require(targets == list(range(targets[0], targets[-1]+1)),
                         "Select one continuous range, including its internal boundaries, to search replacements.")
             if self.repertoire is None:
-                require(self.repertoire_factory is not None, "Export and publish the natural repertoire on Jean Zay first")
+                require(self.repertoire_factory is not None, "The natural repertoire is not loaded in this session")
                 self.repertoire = self.repertoire_factory()
             if action == "rank":
                 if key not in self.searches:
@@ -138,17 +167,30 @@ class ExplorerSession:
             allowed = [x["candidate_id"] for x in self.searches.get(key, {}).get("top_candidates", [])]
             require(request.get("candidate_id") in allowed, "Rank candidates before choosing a variant")
             variant = self.repertoire.variant_spec(self.spec, self.record, segment["targets"], request["candidate_id"])
+            variant_record, _, _ = build_record(variant)
+            replacement, preview_objects = replacement_preview(self.record, variant_record,
+                                                               segment["targets"], request["candidate_id"])
+            preview = dict(spec=variant, replacement=replacement, preview_objects=preview_objects,
+                           preview_assembly_id=variant_record["assembly_id"])
             if action == "variant":
-                return dict(spec=variant)
+                self.variant_preview = copy.deepcopy(preview)
+                return preview
             require(self.assets and self.model_dir, "Live ESMC extraction is required to test the rebuilt variant")
             variant_session = self.from_spec(variant, self.assets, self.model_dir, self.head_dir, self.reference, self.repertoire_factory)
             self.variants[variant["assembly_id"]] = variant_session
             scored = variant_session.result
             variant_segments = score_segment_modes(variant_session.runtime, variant_session.record,
                 variant_session.parents, variant_session.vectors, segment["targets"])
+            variant_session.segments.update({m+suffix: score for m, score in variant_segments.items()})
+            if "source_commit" in self.result:
+                variant_session.result["source_commit"] = self.result["source_commit"]
+            variant_payload = variant_session.payload()
+            variant_payload["initial_selection"] = list(segment["targets"])
+            variant_payload["replacement"] = replacement
             variant_segment = variant_segments[mode]
             self.segments[key]["tested_variant"] = dict(spec=variant, result=scored)
-            return dict(spec=variant, result=scored,
+            self.variant_preview = dict(preview, variant_payload=variant_payload)
+            return dict(preview, result=scored, variant_payload=variant_payload,
                         base_segment=segment, variant_segment=variant_segment,
                         base_segments={m: self.segments[m+suffix] for m in ("local", "full")},
                         variant_segments=variant_segments,

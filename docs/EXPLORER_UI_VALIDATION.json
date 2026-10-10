@@ -1,0 +1,41 @@
+{
+  "change": "Plain Arial explorer with local/global/supervised views and replacement maps",
+  "based_on_commit": "b39d6e4f69f03a62e6716a0715d6a446e80c4dd6",
+  "date": "2026-10-10",
+  "scientific_scoring_changes": false,
+  "tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "passed": 49,
+    "status": "PASS",
+    "frontend": 12,
+    "replacement_backend": 6,
+    "coverage": [
+      "Exact score-source switching and signed supervised contributions",
+      "Whole-assembly activity score and unavailable-head state",
+      "Unscored structural preview with no borrowed scores",
+      "Retested replacement results preserve original assembly",
+      "Persisted previews retain original candidate and region",
+      "Offline exports retain results and remove live callback",
+      "Colab startup readiness and isolated sessions",
+      "Existing scoring, joint masking, retrieval, and supervised decomposition"
+    ]
+  },
+  "natural_repertoire": {
+    "release": "v0.2.0-20261010",
+    "natural_assemblies_by_split": {
+      "dev": 3499,
+      "internal_test": 3515,
+      "train": 27913
+    },
+    "assemblies": 34927,
+    "scope": "All natural assemblies; no engineered assemblies or phenotype labels; not the calibration cohort",
+    "source_url": "https://github.com/AMIRMOHAMMAD-OSS/NeurALPS-v2/releases/download/v0.2.0-20261010/NeurALPS_repertoire_index_20261010.zip",
+    "verification": "HTTP range, first ZIP member manifest.json; member size and CRC verified; full index/database not downloaded",
+    "index_zip_sha256_from_upload_manifest": "267d1f9a5ec8e0b40d2987679e58ec7a87e3ced6bfc00e340377796a9fe3fbb1"
+  },
+  "limits": [
+    "Frontend tests execute production scripts in jsdom; native visual layout and a live Colab GPU run were not available in this environment.",
+    "Replacement backend tests use deterministic inference doubles; existing numerical and masking tests also pass.",
+    "Only the released natural index manifest was retrieved for the corpus audit, not the full database or vector bank."
+  ]
+}

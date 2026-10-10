@@ -7,15 +7,15 @@
   }
   const host = document.createElement('div');
   host.id = config.mount_id;
-  host.style.cssText = 'width:100%;margin:0;background:#f4f7f3;color:#183d3c;';
+  host.style.cssText = 'width:100%;margin:0;background:#fff;color:#111;';
   const notice = document.createElement('div');
   notice.setAttribute('role', 'status');
-  notice.style.cssText = 'padding:14px;font:14px/1.5 system-ui;color:#183d3c;background:#f4f7f3;';
+  notice.style.cssText = 'padding:16px;font:16px/1.5 Arial,sans-serif;color:#111;background:#fff;';
   notice.textContent = 'Opening the NeurALPS compatibility explorer…';
   host.appendChild(notice);
   const frame = document.createElement('iframe');
   frame.title = 'NeurALPS live compatibility explorer';
-  frame.style.cssText = 'display:block;width:100%;height:950px;border:0;background:#f4f7f3;color-scheme:light;';
+  frame.style.cssText = 'display:block;width:100%;height:950px;border:0;background:#fff;color-scheme:light;';
   let observer;
   let resizePending = false;
   const resize = () => {
@@ -56,7 +56,7 @@
         const parts = doc.querySelectorAll('#assemblysvg .part').length;
         const choices = doc.querySelectorAll('#range-start option').length;
         if (doc.documentElement.dataset.neuralpsReady !== 'true' ||
-            parts !== 2 * config.object_count || choices !== config.object_count) {
+            parts !== config.object_count || choices !== config.object_count) {
           throw new Error(doc.documentElement.dataset.neuralpsError || 'the compatibility maps did not initialize');
         }
         notice.hidden = true;
