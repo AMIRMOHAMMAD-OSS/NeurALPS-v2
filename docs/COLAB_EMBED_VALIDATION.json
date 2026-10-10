@@ -1,0 +1,34 @@
+{
+  "change": "Explicit Colab JavaScript mount with an isolated srcdoc document",
+  "based_on_commit": "677c270244a5fbaa5e0411097769d2cb9750a80d",
+  "date": "2026-10-10",
+  "observed_failure": "User screenshots show static page styling but empty maps, selectors, inspector and badges. The exact original browser exception was not captured.",
+  "scientific_changes": false,
+  "tests": {
+    "suite": "tests/test_colab_embedding.py",
+    "passed": 7,
+    "status": "PASS",
+    "coverage": [
+      "explicit eval_js execution and readiness acknowledgment",
+      "two independently mounted live sessions",
+      "populated maps and selectors",
+      "session-specific model callback forwarding",
+      "no Python model call during awaited startup",
+      "standalone export retains only its own data and no callback",
+      "child startup failure is visible",
+      "load timeout is visible",
+      "Python rejects missing/failed initialization"
+    ]
+  },
+  "preserved": [
+    "model scoring and segmentation",
+    "natural-reference calibration",
+    "repertoire retrieval and variant reconstruction",
+    "current session model, input, vectors, cached results and bank"
+  ],
+  "limits": [
+    "Frontend checks execute production scripts in jsdom with a srcdoc shim, not a native Colab browser.",
+    "Native Chromium could not start in this execution environment.",
+    "A real Colab run is still required to verify the rendered interface and its connection."
+  ]
+}

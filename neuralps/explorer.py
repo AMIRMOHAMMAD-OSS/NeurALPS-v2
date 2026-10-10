@@ -185,14 +185,24 @@ def reconnect_explorer(session):
 
 
 def render_html(payload, callback=None):
-    template = (Path(__file__).parent/"data/explorer.html").read_text()
+    template = (Path(__file__).parent/"data/explorer.html").read_text(encoding="utf-8")
     data = json.dumps(payload, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
     bridge = json.dumps(callback)
     return template.replace("__NEURALPS_DATA__", data).replace("__NEURALPS_CALLBACK__", bridge)
 
 
+def render_colab_mount(payload, callback):
+    """Mount an isolated document through Colab's explicit JavaScript channel."""
+    template = (Path(__file__).parent/"data/colab_mount.js").read_text(encoding="utf-8")
+    config = dict(html=render_html(payload, callback), callback=callback,
+                  mount_id="neuralps-frame-"+secrets.token_hex(8),
+                  object_count=len(payload["objects"]))
+    data = json.dumps(config, ensure_ascii=True, allow_nan=False).replace("<", "\\u003c")
+    return template.replace("__NEURALPS_MOUNT_CONFIG__", data)
+
+
 def show_explorer(session):
-    from IPython.display import HTML, JSON, display
+    from IPython.display import JSON
     from google.colab import output
     name = "neuralps.explorer."+secrets.token_hex(8)
     def callback(request):
@@ -201,7 +211,12 @@ def show_explorer(session):
         except Exception as e:
             return JSON(dict(ok=False, error=str(e)))
     output.register_callback(name, callback)
-    display(HTML(render_html(session.payload(), name)))
+    # HTML MIME output is not a standalone document: Colab can transform its
+    # scripts and apply notebook styles. Use explicit JS, preserve the document
+    # in srcdoc, and wait for initialization instead of displaying a blank shell.
+    ready = output.eval_js(render_colab_mount(session.payload(), name), timeout_sec=30)
+    require(isinstance(ready, dict) and ready.get("ready") is True,
+            "Explorer did not initialize. Rerun the explorer cell; the model session is still available.")
     return name
 
 

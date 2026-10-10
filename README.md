@@ -26,6 +26,12 @@ keeps maps, input and computed results; new model computations use the live
 notebook. New saved files can be reopened through the notebook's input cell.
 Older HTML exports without an input sequence need the original annotated JSON.
 
+The live interface opens in an isolated frame through Colab's JavaScript API.
+Startup checks confirm that both maps and the segment selectors are populated.
+If the interface fails to open, rerun **Open or reconnect the explorer**; the
+separate model-scoring cell does not need to run again. Reopening a notebook
+requires rerunning that display cell to restore its live connection.
+
 The separate whole-assembly activity classifier is shown in a collapsible
 details panel. Its probability-calibration status does not describe the fitted
 natural-reference scale. The release has no fitted local/joint-segment
