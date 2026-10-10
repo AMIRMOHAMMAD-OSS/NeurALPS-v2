@@ -1,208 +1,23 @@
 # NeurALPS
 
- notebook : [`notebooks/NeurALPS.ipynb`](notebooks/NeurALPS.ipynb).
+NeurALPS estimates how well domains and their connections fit within a nonribosomal peptide synthetase (NRPS) assembly line. The project is still under development.
 
-[Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/NeurALPS.ipynb)
+[Try the model in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/notebooks/NeurALPS.ipynb)
 
-## Compatibility explorer
+## Model
 
-The live notebook has three map views: **Local**, **Global**, and **Supervised**.
-The white interface uses large Arial text and a red-to-blue score gradient.
-Local and global colors use the original compatibility score in [-1, 1];
-higher means better predicted reconstruction agreement. The supervised view
-shows the whole-assembly activity score and each part's signed contribution
-to its logit. Click a part for its natural-reference comparison.
+NeurALPS combines ESM-C protein embeddings with a contextual encoder trained to reconstruct masked parts of natural NRPS assemblies. It scores compatibility using nearby parts (local) or the wider assembly (global). A separate supervised head estimates whole-assembly activity.
 
-Use **Start** and **End** to select a domain, junction or continuous module
-such as T–C–A. **Score selected segment** masks the entire selection and its
-overlap/alias closure, then computes both local and global compatibility with
-the same mask. It does not average the separately computed map scores.
-**Find better replacements** ranks matching natural fragments in that recipient
-context. The released bank covers 34,927 natural assemblies across its training,
-development, and internal-test splits. The eligible-candidate count describes
-fragments matching the selection, not the size of the bank.
-Preview a candidate to see the replacement outlined in purple. Its new assembly
-has no map scores until **Retest in assembly** rebuilds the junctions and reruns
-the model. Retesting fills all three views with the new assembly's results and
-compares its joint scores with the original. The **Load assembly** button accepts an
-engineered assembly JSON while keeping the live session and downloaded bank.
+## Results
 
-The published runtime and natural assets download automatically. Saved HTML
-keeps maps, input and computed results; new model computations use the live
-notebook. New saved files can be reopened through the notebook's input cell.
-Older HTML exports without an input sequence need the original annotated JSON.
+The figure below shows compatibility predictions on three engineered NRPS sets without fine-tuning. Active constructs generally receive higher scores.
 
-The live interface opens in an isolated frame through Colab's JavaScript API.
-Startup checks confirm that the map and segment selectors are populated.
-If the interface fails to open, rerun **Open or reconnect the explorer**; the
-separate model-scoring cell does not need to run again. Reopening a notebook
-requires rerunning that display cell to restore its live connection.
+![Compatibility scores for active and inactive engineered NRPS constructs across three datasets](docs/figures/compatibility_results.png)
 
-Supervised per-part contributions are signed additive logit terms, not domain
-activity probabilities. The release has no fitted local/joint-segment calibrator;
-those scores do not inherit the global single-object reference scale.
+- **Set 1:** 324 NRPS constructs combining 6 initiation, 9 elongation and 6 termination XUTs ([study](https://paperpile.com/c/pq8nRc/Di5g)).
+- **Set 2:** 105 single-exchange, three-XUT constructs based on the chaiyaphumine-producing assembly line ([study](https://paperpile.com/c/pq8nRc/5FsL)).
+- **Set 3:** 65 constructs with generated T domains in a minimal GxpS assembly line ([study](https://paperpile.com/c/pq8nRc/0gY2)).
 
+Each point is one construct. Bars show the median and interquartile range. AUROC measures how well scores separate active and inactive constructs; the brackets show 95% bootstrap intervals over constructs.
 
-## What is included
-
-| Item | Location |
-| --- | --- |
-| Fitted all-494 supervised model | `models/all494/supervised_head.npz` |
-| Exact training row identities and labels | `models/all494/training_rows.json` |
-| Reproducible frozen training features | `data/training_features.npz` |
-| Regularization selection evidence | `data/head_selection.json` |
-| Colab notebook | `notebooks/NeurALPS.ipynb` |
-| CPU training command | `scripts/fit_all_labels.py` |
-| Minimal runtime exporter | `scripts/export_runtime.py` |
-| Original-versus-port numerical check | `scripts/verify_runtime.py` |
-| Source parity and validation results | `docs/` |
-| Real annotated input example | `examples/AI_1_annotated.json` |
-
-## Runtime provenance
-
-The initial runtime is published as a versioned asset. To reproduce its export,
-follow `RUN_ON_JEAN_ZAY.txt`. The exporter reads the SHA-pinned checkpoint and
-training-only centering means. It writes portable NPZ weights, historical
-embedding references and three golden fixtures. It compares the port against
-the original implementation on BODE1, BODE2 and T-domain examples before
-creating the final ZIP.
-
-The exported bundle also preserves the installed Transformers 4.57.6 fork,
-including its metadata and licenses. The recorded Git source URL returned 404
-during porting; the actual installed implementation is therefore exported.
-The exporter must run in the existing `envs/esmc_connections_hf` environment.
-It performs CPU inference for the check and does not run training or ESMC.
-
-The ESMC weights are downloaded in Colab from the pinned Hugging Face
-revision and verified by SHA-256. Existing local copies can also be supplied.
-The large natural-data cache is not required for default inference.
-
-## Run locally
-
-```bash
-python -m pip install -e '.[inference]'
-python scripts/verify_runtime.py --assets /path/to/runtime_assets
-```
-
-Install the preserved Transformers wheel and its declared dependencies as shown
-in the notebook. New-sequence extraction uses CUDA BF16 with the original
-pooling, tokenizer and historical-reference check. CPU-only use supports the
-saved-feature demonstration, final-head fitting and cached-input encoder tests.
-
-```bash
-neuralps examples/AI_1_annotated.json \
-  --assets /path/to/runtime_assets \
-  --esmc-model /path/to/ESMC-600M \
-  --head models/all494 \
-  --output results/AI_1.json
-```
-
-The JSON input supplies proteins in biosynthetic order with mature physical
-sequences and already resolved domain annotations. Coordinates are **0-based,
-end-exclusive**, separately for each protein. The package reconstructs covalent
-windows and physical protein breaks from those inputs. It does not infer
-domain annotations or chain order from an unannotated FASTA. Ambiguous domain
-types such as a generic `Condensation` are rejected rather than assigned an
-invented subtype. No silent sequence truncation is permitted; each independently
-embedded physical feature must fit the original 2046-residue limit.
-
-## The pretrained output
-
-`pretrained_map` queries each physical domain or boundary independently while
-hiding all overlapping and identical sequence features. For a protein break,
-the two physical termini are masked together and their losses are averaged
-once. Both local-only and full-context results use the same frozen weights.
-
-`joint_domain_indices` selects a contiguous exchanged region. The package masks
-that region and all touching boundaries together, including their physical
-masking closure, and reports domain mean, boundary mean, balanced mean and
-neighborhood mean. Those regional results are distinct from the single-object
-map. The local balanced joint-region score is the deployment default for an
-identified exchange; the notebook retains full context for comparison.
-
-Scores reproduce the original `1 - mean(slot_loss)` implementation:
-25% raw cosine agreement plus 75% agreement after subtracting the training-only
-type mean, with the original degenerate-target fallback. Raw values are in
-[-1, 1]. They are not activity probabilities. Queries with missing physical
-features or fewer than two remaining independent contextual objects retain an
-explicit unavailable status; scores are not fabricated for them.
-
-The explorer applies the original **full-context, single-object natural
-reference** from `e8_reference_scale_652486`. It preserves connected-component
-sampling, exact strata, length fallback, minimum support and midrank ties.
-That calibration used a partition of the 3,515 natural internal-test assemblies;
-the training and development splits were audited for overlap, not used to fit
-reference scores. It is not an activity-probability calibration.
-
-For a **joint segment**, a separate repertoire comparison scores same-type,
-same-topology natural fragments against the same masked-query predictions.
-The donor bank includes all 34,927 natural assemblies across train/dev/test.
-Exact feature duplicates count once. Candidates whose features are already
-visible in the query context are excluded to avoid an alias shortcut. Protein
-breaks contribute once after averaging their two terminal slots. Candidate
-ranking preserves the float32 cached ESMC vectors.
-
-A donor's native boundary feature is a retrieval approximation for a new seam.
-The “Test variant” action rebuilds recipient boundaries and reruns ESMC and
-NeurALPS for complete-domain splices on one physical chain. Boundary-only and
-cross-protein candidates can be downloaded but are not automatically spliced.
-Local-only and jointly masked scores never inherit the old single-object
-full-context percentile.
-
-## The supervised output
-
-The head uses 2822 full-context typed features, training-only standardization
-and the original deterministic L-BFGS logistic solver. The encoder is frozen.
-L2 = **10** minimizes mean archived inner-validation BCE on each BODE donor
-benchmark separately and on their equal-weight average. T-domain outcomes did
-not select the penalty; all 65 are included in the final fit. Each labelled
-assembly has equal weight in that fit, matching the original solver objective.
-
-The native BODE2 control is recorded separately and is not among the 494
-engineered training cases. Unreviewed T-domain hybrids are not relabelled.
-All six BODE1 cases with incomplete joint-mask scores have complete typed
-features and are included. No joint-mask scores are needed by this head.
-
-`activity_score` is the sigmoid of the assembly logit. It is uncalibrated. The
-optional per-object output is an exact additive decomposition of that logit,
-with count, absent-type normalization and intercept effects retained in an
-assembly context term. These are signed classifier contributions, not causal
-defect scores or individual domain probabilities.
-
-To reproduce the final fit:
-
-```bash
-python scripts/fit_all_labels.py --output results/refit_all494
-```
-
-The trainer refuses missing, duplicated, relabelled or mismatched training rows.
-`training_predictions.json` is explicitly in sample. This combined refit has
-no independently measured held-out AUROC. Prior dataset-specific evaluations
-are preserved separately in `docs/ARCHIVED_SUPERVISED_RESULTS.json`.
-
-## Validation status
-
-The portable typed pooling exactly matches 88 saved T-domain feature rows.
-The portable head exactly replays 1077 held-out predictions from 56 archived
-donor-fold models. Local tests check overlap and alias masking, two-slot
-protein breaks, missing-input handling, the loss formula, head optimization,
-training membership, NPZ weight loading and score decomposition.
-
-The actual SSL checkpoint is not in the received source handoff. Its numerical
-parity check is run by the Jean Zay exporter and repeated by the notebook.
-ESMC GPU extraction must pass its historical reference check in the selected
-Colab runtime. A BF16-capable GPU is required for the exact extraction mode;
-a T4 does not satisfy that hardware requirement.
-
-## Repository contents and provenance
-
-Commit the source, notebook, modest training-feature NPZ and fitted head.
-Keep runtime bundles and ESMC weights in versioned downloadable assets. The
-`.gitignore` excludes them and generated results. The notebook resolves and records its exact source commit on startup.
-The runtime bundle remains pinned to the 2026-10-09 release and its SHA-256.
-
-Three original modules and the domain vocabulary are preserved byte for byte;
-their hashes are in `docs/ORIGINAL_SOURCES.json`. The logistic solver changes
-only its import path. Existing project and upstream rights are retained; no
-new license grant is asserted. The supplied data and results remain research
-development evidence, with the original studies' endpoint definitions.
+Active means the expected peptide was experimentally detected. Inactive means no product, or no expected product, was detected.
