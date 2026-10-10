@@ -2,7 +2,7 @@
 
  notebook : [`notebooks/NeurALPS.ipynb`](notebooks/NeurALPS.ipynb).
 
-[Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/notebooks/NeurALPS.ipynb)
+[Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/NeurALPS.ipynb)
 
 ## Compatibility explorer
 
