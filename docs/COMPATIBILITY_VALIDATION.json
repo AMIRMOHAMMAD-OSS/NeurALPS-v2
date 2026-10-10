@@ -1,0 +1,78 @@
+{
+  "change": "Local/global compatibility maps and explicit live segment workflow",
+  "based_on_commit": "63ee200a4add2f8abceb73b97690c0b199f884d3",
+  "date": "2026-10-10",
+  "scientific_changes": false,
+  "preserved": [
+    "Frozen encoder weights and target means",
+    "Local/global reconstruction formula",
+    "Physical overlap and alias masking",
+    "Original fitted full-context single-object reference and its support cutoff",
+    "Natural corpus and cached feature vectors",
+    "Recipient-context retrieval formula and candidate exclusions"
+  ],
+  "model_parity": {
+    "device": "cpu",
+    "fixtures": [
+      {
+        "fixture": "golden_bode1",
+        "max_score_error": 1.7881393432617188e-07,
+        "max_state_error": 5.7220458984375e-06,
+        "status": "PASS"
+      },
+      {
+        "fixture": "golden_bode2",
+        "max_score_error": 1.7881393432617188e-07,
+        "max_state_error": 3.814697265625e-06,
+        "status": "PASS"
+      },
+      {
+        "fixture": "golden_tdomain",
+        "max_score_error": 4.172325134277344e-07,
+        "max_state_error": 2.86102294921875e-06,
+        "status": "PASS"
+      }
+    ],
+    "scope": "Encoder and reconstruction parity on cached inputs; ESMC GPU gate runs separately",
+    "status": "PASS"
+  },
+  "workflow_tests": {
+    "passed": 8,
+    "suite": "tests/test_compatibility_workflow.py"
+  },
+  "existing_explorer_tests": {
+    "passed": 7,
+    "suite": "tests/test_explorer.py"
+  },
+  "ui_and_backend_integration": {
+    "status": "PASS",
+    "scope": "DOM events and real frozen CPU encoder through an HTTP test bridge; synthetic donor bank; native browser layout and GPU extraction not tested here",
+    "checks": [
+      "Both maps include every scored part",
+      "Sparse reference coverage never hides model colors",
+      "Uploaded precomputed joint result is available",
+      "Rare condensation domain shows both original scores",
+      "Visible range controls include internal and outer junctions",
+      "Offline actions explain the live model requirement",
+      "Disconnected selection can score but cannot search a contiguous donor",
+      "Fill gaps enables contiguous donor search",
+      "Saved result preserves all original numeric data",
+      "Saved HTML cannot impersonate a live callback",
+      "UI sends the exact T-C-A range and junction choice",
+      "Real frozen encoder returns both scores for the same mask",
+      "Contextual search executes against a synthetic test bank",
+      "Top donor produces an engineered assembly with splice provenance",
+      "Global search uses its own recipient predictions",
+      "Export retains input and both cached context results",
+      "Saved replacement search remains inspectable offline"
+    ],
+    "checks_passed": 17,
+    "errors": []
+  },
+  "limits": [
+    "Native browser layout could not be checked in this execution environment. DOM event and data checks passed.",
+    "New ESMC extraction and rebuilt-variant GPU inference require the live Colab runtime and were not rerun here.",
+    "Integration retrieval used a synthetic donor fixture; this update does not change or revalidate the full natural corpus."
+  ],
+  "calibration_contract": "The release contains the fitted global/full-context single-object natural-reference scale. Local and joint-segment scores keep their original model range; no new calibration is invented."
+}

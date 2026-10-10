@@ -24,18 +24,29 @@ def object_weights(record, targets):
     return np.full(len(targets), 1/len(targets)), "equal physical-object weight"
 
 
-def score_segment(runtime, record, parents, vectors, indices, mode="full", touching_boundaries=False):
-    require(mode in ("full", "local"), "Unknown context mode")
+def score_segment_modes(runtime, record, parents, vectors, indices,
+                        modes=("local", "full"), touching_boundaries=False):
+    """Compare context modes using the same joint physical masking plan."""
+    require(bool(modes) and set(modes) <= {"full", "local"}, "Unknown context mode")
     targets = selection(record, indices, touching_boundaries)
     plan = make_plan(record, targets, parents)
-    result = runtime.score_plans(record, parents, vectors, {"selection": plan}, modes=(mode,))["selection"]
+    scored = runtime.score_plans(record, parents, vectors, {"selection": plan}, modes=modes)["selection"]
     weights, aggregation = object_weights(record, targets)
-    result.update(mode=mode, aggregation=aggregation, score=None,
-                  additional_hidden_objects=sorted({j for j, _ in result.get("hidden", [])}-set(targets)),
-                  natural_percentile_0_to_100=None)
-    if result["status"] == "SCORED":
-        result["score"] = float(sum(w*result["objects"][str(j)][mode] for j, w in zip(targets, weights)))
-    return result
+    results = {}
+    for mode in modes:
+        result = dict(scored, mode=mode, aggregation=aggregation, score=None,
+                      additional_hidden_objects=sorted({j for j, _ in scored.get("hidden", [])}-set(targets)),
+                      natural_percentile_0_to_100=None,
+                      score_meaning="Joint reconstruction compatibility on the original [-1, 1] scale")
+        if result["status"] == "SCORED":
+            result["score"] = float(sum(w*result["objects"][str(j)][mode] for j, w in zip(targets, weights)))
+        results[mode] = result
+    return results
+
+
+def score_segment(runtime, record, parents, vectors, indices, mode="full", touching_boundaries=False):
+    return score_segment_modes(runtime, record, parents, vectors, indices,
+                               (mode,), touching_boundaries)[mode]
 
 
 def masked_predictions(runtime, record, parents, vectors, targets, mode):

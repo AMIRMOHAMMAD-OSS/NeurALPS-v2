@@ -4,6 +4,33 @@
 
 [Open in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/notebooks/NeurALPS.ipynb)
 
+## Compatibility explorer
+
+The live notebook shows local and global compatibility maps together. Their
+colors use the original model score in [-1, 1]; higher means better predicted
+reconstruction agreement. Click a part to inspect its existing Jean Zay
+natural-reference calibration. Sparse reference coverage no longer hides an
+available compatibility score.
+
+Use **Start** and **End** to select a domain, junction or continuous module
+such as T–C–A. **Score selected segment** masks the entire selection and its
+overlap/alias closure, then computes both local and global compatibility with
+the same mask. It does not average the separately computed map scores.
+**Find better replacements** ranks matching natural fragments in that recipient
+context. **Retest in assembly** rebuilds the replacement's junctions and compares
+both joint scores after re-embedding. The **Load assembly** button accepts an
+engineered assembly JSON while keeping the live session and downloaded bank.
+
+The published runtime and natural assets download automatically. Saved HTML
+keeps maps, input and computed results; new model computations use the live
+notebook. New saved files can be reopened through the notebook's input cell.
+Older HTML exports without an input sequence need the original annotated JSON.
+
+The separate whole-assembly activity classifier is shown in a collapsible
+details panel. Its probability-calibration status does not describe the fitted
+natural-reference scale. The release has no fitted local/joint-segment
+calibrator, and those scores do not inherit the global single-object scale.
+
 
 ## What is included
 

@@ -4,11 +4,12 @@ import json
 import secrets
 from pathlib import Path
 import threading
+import re
 from scipy.special import expit
 from .contracts import require, sha, SSL_SHA, FEATURE_SCHEMA
 from .inputs import build_record
 from .scoring import Runtime, slots_by_object
-from .segments import score_segment
+from .segments import score_segment, score_segment_modes, selection
 
 
 def cartoon_objects(record, result):
@@ -74,37 +75,65 @@ class ExplorerSession:
         return session
 
     def payload(self):
-        return dict(schema="neuralps_explorer_v1", assembly_id=self.record["assembly_id"],
+        return dict(schema="neuralps_explorer_v2", assembly_id=self.record["assembly_id"],
                     objects=cartoon_objects(self.record, self.result), result=self.result,
                     reference_available=self.reference is not None,
                     repertoire_available=self.repertoire is not None or self.repertoire_factory is not None,
                     segment_results=self.segments, candidate_results=self.searches,
                     source="Live model session", coordinates="0-based, end-exclusive",
-                    can_test_variants=bool(self.assets and self.model_dir))
+                    can_test_variants=bool(self.assets and self.model_dir),
+                    input_spec=self.spec,
+                    initial_selection=self.spec.get("joint_domain_indices", [0]),
+                    compatibility_scale=dict(range=[-1, 1], higher_is_better=True,
+                        meaning="Original reconstruction agreement; no added display calibration",
+                        local="Local encoder path", full="Local encoder plus global assembly context"))
 
     def handle(self, request):
         require(isinstance(request, dict), "Expected an explorer request")
         require(self.lock.acquire(blocking=False), "Another model request is running; wait for it to finish")
         try:
             action = request.get("action")
+            require(action in ("state", "load_assembly", "score", "rank", "variant", "test_variant"),
+                    "Unknown explorer action")
             if action == "state":
                 return self.payload()
+            if action == "load_assembly":
+                require(self.assets and self.model_dir, "Open a live model session to score a new assembly")
+                spec = request.get("spec")
+                require(isinstance(spec, dict), "Upload an annotated assembly JSON")
+                replacement = self.from_spec(spec, self.assets, self.model_dir, self.head_dir,
+                                             self.reference, self.repertoire_factory)
+                replacement.repertoire = self.repertoire
+                if "source_commit" in self.result:
+                    replacement.result["source_commit"] = self.result["source_commit"]
+                # Keep the held lock, and keep the old session if loading failed.
+                self.__dict__.update({k: v for k, v in replacement.__dict__.items() if k != "lock"})
+                return dict(payload=self.payload())
             selected = request.get("indices", [])
             mode = request.get("mode", "full")
+            require(mode in ("local", "full"), "Unknown context mode")
             touching = bool(request.get("touching_boundaries", False))
-            segment = score_segment(self.runtime, self.record, self.parents, self.vectors, selected, mode, touching)
-            key = mode+":"+",".join(map(str,segment["targets"]))
-            self.segments[key] = segment
+            targets = selection(self.record, selected, touching)
+            suffix = ":"+",".join(map(str, targets))
+            if any(m+suffix not in self.segments for m in ("local", "full")):
+                scores = score_segment_modes(self.runtime, self.record, self.parents, self.vectors, targets)
+                self.segments.update({m+suffix: value for m, value in scores.items()})
+            segments = {m+suffix: self.segments[m+suffix] for m in ("local", "full")}
+            key = mode+suffix
+            segment = self.segments[key]
             if action == "score":
-                return dict(segment=segment, key=key)
+                return dict(segment=segment, segments=segments, key=key)
             require(segment["status"] == "SCORED", "This selection cannot be scored: " + segment["status"])
+            if action == "rank":
+                require(targets == list(range(targets[0], targets[-1]+1)),
+                        "Select one continuous range, including its internal boundaries, to search replacements.")
             if self.repertoire is None:
                 require(self.repertoire_factory is not None, "Export and publish the natural repertoire on Jean Zay first")
                 self.repertoire = self.repertoire_factory()
             if action == "rank":
                 if key not in self.searches:
                     self.searches[key] = self.repertoire.rank(self.runtime, self.record, self.parents, self.vectors, segment["targets"], mode)
-                return dict(segment=segment, ranking=self.searches[key], key=key)
+                return dict(segment=segment, segments=segments, ranking=self.searches[key], key=key)
             require(action in ("variant", "test_variant"), "Unknown explorer action")
             allowed = [x["candidate_id"] for x in self.searches.get(key, {}).get("top_candidates", [])]
             require(request.get("candidate_id") in allowed, "Rank candidates before choosing a variant")
@@ -115,17 +144,44 @@ class ExplorerSession:
             variant_session = self.from_spec(variant, self.assets, self.model_dir, self.head_dir, self.reference, self.repertoire_factory)
             self.variants[variant["assembly_id"]] = variant_session
             scored = variant_session.result
-            variant_segment = score_segment(variant_session.runtime, variant_session.record,
-                variant_session.parents, variant_session.vectors, segment["targets"], mode)
+            variant_segments = score_segment_modes(variant_session.runtime, variant_session.record,
+                variant_session.parents, variant_session.vectors, segment["targets"])
+            variant_segment = variant_segments[mode]
             self.segments[key]["tested_variant"] = dict(spec=variant, result=scored)
             return dict(spec=variant, result=scored,
                         base_segment=segment, variant_segment=variant_segment,
+                        base_segments={m: self.segments[m+suffix] for m in ("local", "full")},
+                        variant_segments=variant_segments,
                         base_activity_score=self.result.get("supervised", {}).get("activity_score"),
                         variant_activity_score=scored.get("supervised", {}).get("activity_score"),
                         model_score_not_calibrated_probability=True,
                         note="Complete-domain splice rescored after rebuilding and re-embedding its physical boundaries. No experiment was performed.")
         finally:
             self.lock.release()
+
+
+def input_from_saved(text):
+    """Read a session JSON or exported HTML without executing its contents."""
+    if text.lstrip().startswith("<"):
+        match = re.search(r'<script\b[^>]*\bid=[\"\x27]neuralps-data[\"\x27][^>]*>(.*?)</script\s*>',
+                          text, flags=re.DOTALL | re.IGNORECASE)
+        require(match is not None, "This HTML does not contain a NeurALPS saved result")
+        text = match.group(1)
+    data = json.loads(text)
+    require(isinstance(data, dict), "Expected an annotated assembly or saved result")
+    if data.get("schema", "").startswith("neuralps_explorer_"):
+        data = data.get("input_spec")
+        require(isinstance(data, dict),
+                "This older saved HTML has no input sequence. Upload the original annotated assembly JSON instead.")
+    require(isinstance(data.get("proteins"), list), "Expected an annotated assembly JSON with proteins")
+    build_record(data)  # Check the input before attempting ESMC extraction.
+    return data
+
+
+def reconnect_explorer(session):
+    """Refresh an existing Colab session after an interface-only update."""
+    session.__class__ = ExplorerSession
+    return show_explorer(session)
 
 
 def render_html(payload, callback=None):
