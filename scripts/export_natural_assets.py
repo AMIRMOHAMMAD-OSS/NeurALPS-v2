@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Export the existing reference and ALL natural candidate features, without training.
-
-Run on Jean Zay with the existing NumPy environment. The original project is
-opened read-only. Float32 embeddings are preserved exactly and distributed in
-small release assets; no ESMC or encoder inference is performed.
-"""
 import argparse
 from collections import Counter, defaultdict
 from functools import lru_cache
