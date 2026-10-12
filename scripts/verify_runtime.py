@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Compare the portable implementation against independently exported originals."""
 import argparse
 import json
 from pathlib import Path
