@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Create the small runtime asset ZIP on Jean Zay, without copying model caches.
-
-Loads only the SHA-pinned original checkpoint, converts weights to pickle-free
-NPZ, and records independent original-code golden predictions for port checks.
-Does not train or modify the existing project. Requires NumPy and CPU PyTorch.
-"""
 import argparse
 import ast
 import base64
@@ -26,7 +19,6 @@ sys.path.insert(0, str(RELEASE))
 from neuralps.contracts import SSL_SHA, TARGETS_SHA, FORK_COMMIT, require, sha, dump
 
 def export_transformers_wheel(out):
-    """Preserve the installed pure-Python fork, metadata and license files."""
     dist = importlib.metadata.distribution("transformers")
     require(dist.version == "4.57.6", "Use the original esmc_connections_hf Python environment")
     origin = json.loads(dist.read_text("direct_url.json") or "{}")
