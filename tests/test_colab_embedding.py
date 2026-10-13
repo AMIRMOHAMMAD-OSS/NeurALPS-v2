@@ -1,14 +1,3 @@
-"""Execute the real frontend under a notebook MIME insertion contract.
-
-The old tests loaded a complete document with every inline script enabled. That
-cannot detect an HTML-only notebook output whose data scripts are removed or
-whose initialization never executes. These tests intentionally strip scripts
-from HTML MIME, then run only the explicitly emitted Javascript MIME/eval_js.
-
-Install jsdom for the optional frontend tests with ``npm install jsdom`` and set
-NEURALPS_JSDOM_MODULE to its absolute module directory when it is not on NODE_PATH.
-No encoder, GPU, or remote notebook session is needed for this rendering test.
-"""
 import copy
 import json
 import os
