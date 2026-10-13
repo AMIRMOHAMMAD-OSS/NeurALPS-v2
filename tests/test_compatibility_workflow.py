@@ -1,4 +1,3 @@
-"""Scientific and session regressions for local/global segment workflows."""
 import copy
 import json
 import unittest
