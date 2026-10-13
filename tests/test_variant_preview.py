@@ -1,4 +1,3 @@
-"""Replacement previews expose rebuilt geometry and only genuine retest scores."""
 import copy
 import json
 import unittest
@@ -10,7 +9,6 @@ from test_release import fixture
 
 
 class FixedRuntime:
-    """Known values for testing response ownership; no scientific inference."""
     def __init__(self, score):
         self.value = score
 
