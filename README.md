@@ -2,7 +2,7 @@
 
 NeurALPS estimates how well domains and their connections fit within a nonribosomal peptide synthetase (NRPS) assembly line.
 
-[Try the model in Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/NeurALPS.ipynb)
+[Colab](https://colab.research.google.com/github/AMIRMOHAMMAD-OSS/NeurALPS-v2/blob/main/NeurALPS.ipynb)
 
 ## Model
 
